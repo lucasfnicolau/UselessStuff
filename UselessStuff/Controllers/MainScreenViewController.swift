@@ -15,5 +15,10 @@ class MainScreenViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func itemTouched(_ draggableItem: DraggableItem) {
+        guard draggableItem.item != .undefined else { return }
+        let segueIdentifier = draggableItem.item.rawValue
+        performSegue(withIdentifier: segueIdentifier, sender: nil)
+    }
 }
 
