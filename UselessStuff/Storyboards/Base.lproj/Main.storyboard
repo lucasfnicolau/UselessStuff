@@ -21,137 +21,117 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="N1a-QW-8ZV">
                                 <rect key="frame" x="20" y="54" width="374" height="270"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="PXN-Fi-1L8">
-                                <rect key="frame" x="74.5" y="402" width="265" height="400"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="vaQ-qt-qLS">
-                                        <rect key="frame" x="0.0" y="0.0" width="265" height="106.5"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phF-Hu-hTf" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="106.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="phF-Hu-hTf" secondAttribute="height" id="M1w-wc-J11"/>
-                                                </constraints>
-                                                <state key="normal" backgroundImage="pallette"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="pallette"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zY7-jh-w1c"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVs-nt-25U" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
-                                                <rect key="frame" x="160" y="1.5" width="105" height="105"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="QVs-nt-25U" secondAttribute="height" multiplier="1:1" id="KQb-qb-c2S"/>
-                                                </constraints>
-                                                <state key="normal" backgroundImage="ruler"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="ruler"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5HD-mH-hyh"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="xh2-lQ-1Hx">
-                                        <rect key="frame" x="0.0" y="146.5" width="265" height="107"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vde-wk-Je8" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="24" width="83" height="83"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="vde-wk-Je8" secondAttribute="height" multiplier="1:1" id="smq-QN-JTL"/>
-                                                </constraints>
-                                                <state key="normal" backgroundImage="dice"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="dice"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hI-00-uYF"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGt-vb-hmT" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
-                                                <rect key="frame" x="162" y="4" width="103" height="103"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="rGt-vb-hmT" secondAttribute="height" multiplier="1:1" id="d6y-9E-MHv"/>
-                                                </constraints>
-                                                <state key="normal" backgroundImage="coin"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="coin"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U4h-JW-aFk"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="LkE-ui-zbu">
-                                        <rect key="frame" x="0.0" y="293.5" width="265" height="106.5"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyA-Gz-Ef8" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="85.5" height="106.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="QyA-Gz-Ef8" secondAttribute="height" multiplier="0.8:1" id="t0o-Kb-TYm"/>
-                                                </constraints>
-                                                <state key="normal" backgroundImage="lock"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="lock"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7il-iF-Y5B"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2P-iD-cqZ" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
-                                                <rect key="frame" x="185" y="0.0" width="80" height="106.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="S2P-iD-cqZ" secondAttribute="height" multiplier="0.75:1" id="pnp-CZ-xKZ"/>
-                                                </constraints>
-                                                <state key="normal" backgroundImage="calculator"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="calculator"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xc8-PK-2Cz"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phF-Hu-hTf" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
+                                <rect key="frame" x="151.5" y="274" width="111" height="111"/>
                                 <constraints>
-                                    <constraint firstItem="LkE-ui-zbu" firstAttribute="leading" secondItem="PXN-Fi-1L8" secondAttribute="leading" id="2Ke-4t-oNF"/>
-                                    <constraint firstItem="xh2-lQ-1Hx" firstAttribute="leading" secondItem="PXN-Fi-1L8" secondAttribute="leading" id="7Rb-Po-BRu"/>
-                                    <constraint firstItem="vaQ-qt-qLS" firstAttribute="leading" secondItem="PXN-Fi-1L8" secondAttribute="leading" id="Ist-S4-0fp"/>
-                                    <constraint firstAttribute="trailing" secondItem="vaQ-qt-qLS" secondAttribute="trailing" id="K5D-dj-jD6"/>
-                                    <constraint firstAttribute="trailing" secondItem="LkE-ui-zbu" secondAttribute="trailing" id="e30-HE-UyK"/>
-                                    <constraint firstAttribute="trailing" secondItem="xh2-lQ-1Hx" secondAttribute="trailing" id="zZE-IV-jRj"/>
+                                    <constraint firstAttribute="width" secondItem="phF-Hu-hTf" secondAttribute="height" id="M1w-wc-J11"/>
                                 </constraints>
-                            </stackView>
+                                <state key="normal" backgroundImage="pallette"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="pallette"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zY7-jh-w1c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVs-nt-25U" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
+                                <rect key="frame" x="154.5" y="274" width="105" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QVs-nt-25U" secondAttribute="height" multiplier="1:1" id="KQb-qb-c2S"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="ruler"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="ruler"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5HD-mH-hyh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vde-wk-Je8" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
+                                <rect key="frame" x="165.5" y="274" width="83" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vde-wk-Je8" secondAttribute="height" multiplier="1:1" id="smq-QN-JTL"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="dice"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="dice"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hI-00-uYF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGt-vb-hmT" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
+                                <rect key="frame" x="155.5" y="274" width="103" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rGt-vb-hmT" secondAttribute="height" multiplier="1:1" id="d6y-9E-MHv"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="coin"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="coin"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U4h-JW-aFk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyA-Gz-Ef8" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
+                                <rect key="frame" x="164" y="274" width="86" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QyA-Gz-Ef8" secondAttribute="height" multiplier="0.8:1" id="t0o-Kb-TYm"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="lock"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="lock"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7il-iF-Y5B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2P-iD-cqZ" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
+                                <rect key="frame" x="164.5" y="274" width="85" height="113.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="S2P-iD-cqZ" secondAttribute="height" multiplier="0.75:1" id="pnp-CZ-xKZ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="calculator"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="calculator"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xc8-PK-2Cz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.94509803921568625" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="PXN-Fi-1L8" firstAttribute="centerX" secondItem="wKG-IG-Mvh" secondAttribute="centerX" id="1TV-Sd-qus"/>
-                            <constraint firstItem="PXN-Fi-1L8" firstAttribute="centerY" secondItem="wKG-IG-Mvh" secondAttribute="centerY" constant="-10" id="4lM-hv-Ff9"/>
+                            <constraint firstItem="QyA-Gz-Ef8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Jd-3P-1Ol"/>
+                            <constraint firstItem="rGt-vb-hmT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7kI-KI-PJN"/>
                             <constraint firstItem="wKG-IG-Mvh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="BDN-hL-ERN"/>
                             <constraint firstItem="wKG-IG-Mvh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.558036" id="OOF-Le-lSn"/>
+                            <constraint firstItem="S2P-iD-cqZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rft-UQ-64T"/>
+                            <constraint firstItem="vde-wk-Je8" firstAttribute="top" secondItem="N1a-QW-8ZV" secondAttribute="bottom" constant="-50" id="Rhx-9J-5y0"/>
                             <constraint firstItem="wKG-IG-Mvh" firstAttribute="top" secondItem="N1a-QW-8ZV" secondAttribute="bottom" constant="38" id="SIn-yK-Cgl"/>
+                            <constraint firstItem="QVs-nt-25U" firstAttribute="top" secondItem="N1a-QW-8ZV" secondAttribute="bottom" constant="-50" id="Sdh-wS-5WB"/>
+                            <constraint firstItem="phF-Hu-hTf" firstAttribute="top" secondItem="N1a-QW-8ZV" secondAttribute="bottom" constant="-50" id="bAn-Zb-6Y4"/>
+                            <constraint firstItem="S2P-iD-cqZ" firstAttribute="top" secondItem="N1a-QW-8ZV" secondAttribute="bottom" constant="-50" id="cLL-O9-bPZ"/>
+                            <constraint firstItem="phF-Hu-hTf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eOd-gP-BYm"/>
+                            <constraint firstItem="vde-wk-Je8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eaq-OQ-Q0C"/>
                             <constraint firstItem="N1a-QW-8ZV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="emO-Nx-AZ0"/>
                             <constraint firstItem="wKG-IG-Mvh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kjQ-Yd-QUi"/>
+                            <constraint firstItem="QyA-Gz-Ef8" firstAttribute="top" secondItem="N1a-QW-8ZV" secondAttribute="bottom" constant="-50" id="lNa-hG-1gD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N1a-QW-8ZV" secondAttribute="trailing" constant="20" id="m5b-ch-55R"/>
-                            <constraint firstItem="PXN-Fi-1L8" firstAttribute="width" secondItem="wKG-IG-Mvh" secondAttribute="width" multiplier="0.64" id="p7m-2L-Vvl"/>
+                            <constraint firstItem="rGt-vb-hmT" firstAttribute="top" secondItem="N1a-QW-8ZV" secondAttribute="bottom" constant="-50" id="qsK-sd-RIL"/>
                             <constraint firstItem="wKG-IG-Mvh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rfJ-EW-9AM"/>
+                            <constraint firstItem="QVs-nt-25U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uvK-Bn-nKS"/>
                             <constraint firstItem="N1a-QW-8ZV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="x8g-KI-IeJ"/>
-                            <constraint firstItem="PXN-Fi-1L8" firstAttribute="height" secondItem="wKG-IG-Mvh" secondAttribute="height" multiplier="0.8" id="z9f-Is-cTI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outletCollection property="itemButtons" destination="phF-Hu-hTf" collectionClass="NSMutableArray" id="IsU-Ax-LSm"/>
-                        <outletCollection property="itemButtons" destination="QVs-nt-25U" collectionClass="NSMutableArray" id="fXS-5N-L6G"/>
-                        <outletCollection property="itemButtons" destination="vde-wk-Je8" collectionClass="NSMutableArray" id="Xjf-Ux-nuu"/>
-                        <outletCollection property="itemButtons" destination="rGt-vb-hmT" collectionClass="NSMutableArray" id="ZJA-dF-0yV"/>
-                        <outletCollection property="itemButtons" destination="QyA-Gz-Ef8" collectionClass="NSMutableArray" id="tug-SL-WJn"/>
-                        <outletCollection property="itemButtons" destination="S2P-iD-cqZ" collectionClass="NSMutableArray" id="ClK-kP-k8e"/>
+                        <outletCollection property="draggableItems" destination="phF-Hu-hTf" collectionClass="NSMutableArray" id="IsU-Ax-LSm"/>
+                        <outletCollection property="draggableItems" destination="QVs-nt-25U" collectionClass="NSMutableArray" id="fXS-5N-L6G"/>
+                        <outletCollection property="draggableItems" destination="vde-wk-Je8" collectionClass="NSMutableArray" id="Xjf-Ux-nuu"/>
+                        <outletCollection property="draggableItems" destination="rGt-vb-hmT" collectionClass="NSMutableArray" id="ZJA-dF-0yV"/>
+                        <outletCollection property="draggableItems" destination="QyA-Gz-Ef8" collectionClass="NSMutableArray" id="tug-SL-WJn"/>
+                        <outletCollection property="draggableItems" destination="S2P-iD-cqZ" collectionClass="NSMutableArray" id="ClK-kP-k8e"/>
                         <segue destination="Z9T-nb-0PX" kind="presentation" identifier="pallette" modalPresentationStyle="fullScreen" id="NMU-d5-4lk"/>
                         <segue destination="k3X-Aq-KDQ" kind="presentation" identifier="ruler" modalPresentationStyle="fullScreen" id="V4q-dp-B1W"/>
                         <segue destination="YBN-qb-NBP" kind="presentation" identifier="dice" modalPresentationStyle="fullScreen" id="qRv-r8-e4i"/>
