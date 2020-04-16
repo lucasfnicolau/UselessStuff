@@ -20,6 +20,8 @@
 		B6E3903824490E6F005ECAD6 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903724490E6F005ECAD6 /* CoinViewController.swift */; };
 		B6E3903A24490E7D005ECAD6 /* LockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903924490E7D005ECAD6 /* LockViewController.swift */; };
 		B6E3903C24490E89005ECAD6 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903B24490E89005ECAD6 /* CalculatorViewController.swift */; };
+		B6E3904024491914005ECAD6 /* UselessStuffProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903F24491914005ECAD6 /* UselessStuffProtocol.swift */; };
+		B6E390422449195C005ECAD6 /* UselessStuffDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E390412449195C005ECAD6 /* UselessStuffDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		B6E3903724490E6F005ECAD6 /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
 		B6E3903924490E7D005ECAD6 /* LockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockViewController.swift; sourceTree = "<group>"; };
 		B6E3903B24490E89005ECAD6 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		B6E3903F24491914005ECAD6 /* UselessStuffProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UselessStuffProtocol.swift; sourceTree = "<group>"; };
+		B6E390412449195C005ECAD6 /* UselessStuffDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UselessStuffDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,8 @@
 		B6A712DB2448F89100493FE7 = {
 			isa = PBXGroup;
 			children = (
-				B6A712E62448F89100493FE7 /* UselessStuff */,
 				B6A712E52448F89100493FE7 /* Products */,
+				B6A712E62448F89100493FE7 /* UselessStuff */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +74,7 @@
 		B6A712E62448F89100493FE7 /* UselessStuff */ = {
 			isa = PBXGroup;
 			children = (
+				B6E3903E244918CA005ECAD6 /* ViewModels */,
 				B6A712FF2449062F00493FE7 /* Storyboards */,
 				B6A712FE2449062300493FE7 /* Supporting Files */,
 				B6A712FD2449061A00493FE7 /* Models */,
@@ -126,6 +131,15 @@
 				B6A712F22448F89700493FE7 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B6E3903E244918CA005ECAD6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3903F24491914005ECAD6 /* UselessStuffProtocol.swift */,
+				B6E390412449195C005ECAD6 /* UselessStuffDelegate.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +217,11 @@
 				B6A712EC2448F89100493FE7 /* MainScreenViewController.swift in Sources */,
 				B6A712E82448F89100493FE7 /* AppDelegate.swift in Sources */,
 				B6A713012449079C00493FE7 /* DraggableItem.swift in Sources */,
+				B6E390422449195C005ECAD6 /* UselessStuffDelegate.swift in Sources */,
 				B6E3903824490E6F005ECAD6 /* CoinViewController.swift in Sources */,
 				B6E3903624490E64005ECAD6 /* DiceViewController.swift in Sources */,
 				B6E3903424490E51005ECAD6 /* RulerViewController.swift in Sources */,
+				B6E3904024491914005ECAD6 /* UselessStuffProtocol.swift in Sources */,
 				B6E3903A24490E7D005ECAD6 /* LockViewController.swift in Sources */,
 				B6E3903224490E28005ECAD6 /* PalletteViewController.swift in Sources */,
 				B6A712EA2448F89100493FE7 /* SceneDelegate.swift in Sources */,

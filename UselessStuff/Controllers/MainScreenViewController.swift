@@ -9,10 +9,21 @@
 import UIKit
 
 class MainScreenViewController: UIViewController {
-    @IBOutlet var itemButtons: [DraggableItem]!
+    @IBOutlet var draggableItems: [DraggableItem]!
+    let uselessStuffDelegate = UselessStuffDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        if !uselessStuffDelegate.appHasBeenOpenedBefore() {
+            present(uselessStuffDelegate.getAlertController(), animated: true, completion: nil)
+        } else {
+            uselessStuffDelegate.checkItemsPosition(draggableItems)
+        }
     }
 
     @IBAction func itemTouched(_ draggableItem: DraggableItem) {
