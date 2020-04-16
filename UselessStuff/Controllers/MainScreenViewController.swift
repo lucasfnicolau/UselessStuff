@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainScreenViewController.swift
 //  UselessStuff
 //
 //  Created by Lucas Fernandez Nicolau on 16/04/20.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainScreenViewController: UIViewController {
+    @IBOutlet var itemButtons: [DraggableItem]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
 
 }
 
