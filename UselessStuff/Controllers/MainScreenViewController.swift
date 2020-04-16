@@ -10,6 +10,7 @@ import UIKit
 
 class MainScreenViewController: UIViewController {
     @IBOutlet var draggableItems: [DraggableItem]!
+    let uselessStuffDelegate = UselessStuffDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,19 +18,11 @@ class MainScreenViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        checkItemsPosition()
-    }
 
-    func checkItemsPosition() {
-        let defaults = UserDefaults.standard
-
-        for draggableItem in draggableItems {
-            if let positionArray = defaults.array(forKey: draggableItem.item.rawValue) {
-                if let pos = positionArray as? [CGFloat] {
-                    let origin = CGPoint(x: pos[0], y: pos[1])
-                    draggableItem.frame = CGRect(origin: origin, size: draggableItem.frame.size)
-                }
-            }
+        if !uselessStuffDelegate.appHasBeenOpenedBefore() {
+            present(uselessStuffDelegate.getAlertController(), animated: true, completion: nil)
+        } else {
+            uselessStuffDelegate.checkItemsPosition(draggableItems)
         }
     }
 

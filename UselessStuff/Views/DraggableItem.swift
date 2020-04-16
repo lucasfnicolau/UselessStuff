@@ -25,6 +25,7 @@ class DraggableItem: UIButton {
         }
     }
     var item: Item = .undefined
+    let defaults = UserDefaults.standard
 
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesCancelled(touches, with: event)
@@ -50,8 +51,6 @@ class DraggableItem: UIButton {
             let pos = first.location(in: superview)
             let x = pos.x - self.frame.width / 2
             let y = pos.y - self.frame.height / 2
-
-            let defaults = UserDefaults.standard
             defaults.setValue([x, y], forKey: item.rawValue)
         }
     }
