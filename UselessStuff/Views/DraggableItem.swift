@@ -8,15 +8,26 @@
 
 import UIKit
 
-class DraggableItem: UIButton {
+enum Item: String {
+    case pallette
+    case ruler
+    case dice
+    case coin
+    case lock
+    case calculator
+    case undefined
+}
 
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
+class DraggableItem: UIButton {
+    @IBInspectable var rawItem: String = Item.undefined.rawValue {
+        didSet {
+            self.item = Item(rawValue: self.rawItem.lowercased()) ?? .undefined
+        }
     }
+    var item: Item = .undefined
 
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesMoved(touches, with: event)
-
+        super.touchesCancelled(touches, with: event)
         if let first = touches.first {
             let pos = first.location(in: superview)
             let x = pos.x - self.frame.width / 2
@@ -24,13 +35,5 @@ class DraggableItem: UIButton {
             let origin = CGPoint(x: x, y: y)
             self.frame = CGRect(origin: origin, size: self.frame.size)
         }
-    }
-
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesCancelled(touches, with: event)
-    }
-
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesEnded(touches, with: event)
     }
 }
