@@ -14,6 +14,12 @@
 		B6A712F12448F89700493FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A712F02448F89700493FE7 /* Assets.xcassets */; };
 		B6A712F42448F89700493FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A712F22448F89700493FE7 /* LaunchScreen.storyboard */; };
 		B6A713012449079C00493FE7 /* DraggableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A713002449079C00493FE7 /* DraggableItem.swift */; };
+		B6E3903224490E28005ECAD6 /* PalletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903124490E28005ECAD6 /* PalletteViewController.swift */; };
+		B6E3903424490E51005ECAD6 /* RulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903324490E51005ECAD6 /* RulerViewController.swift */; };
+		B6E3903624490E64005ECAD6 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903524490E64005ECAD6 /* DiceViewController.swift */; };
+		B6E3903824490E6F005ECAD6 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903724490E6F005ECAD6 /* CoinViewController.swift */; };
+		B6E3903A24490E7D005ECAD6 /* LockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903924490E7D005ECAD6 /* LockViewController.swift */; };
+		B6E3903C24490E89005ECAD6 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903B24490E89005ECAD6 /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		B6A712F32448F89700493FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6A712F52448F89700493FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6A713002449079C00493FE7 /* DraggableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableItem.swift; sourceTree = "<group>"; };
+		B6E3903124490E28005ECAD6 /* PalletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalletteViewController.swift; sourceTree = "<group>"; };
+		B6E3903324490E51005ECAD6 /* RulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerViewController.swift; sourceTree = "<group>"; };
+		B6E3903524490E64005ECAD6 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
+		B6E3903724490E6F005ECAD6 /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
+		B6E3903924490E7D005ECAD6 /* LockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockViewController.swift; sourceTree = "<group>"; };
+		B6E3903B24490E89005ECAD6 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,12 @@
 			isa = PBXGroup;
 			children = (
 				B6A712EB2448F89100493FE7 /* MainScreenViewController.swift */,
+				B6E3903124490E28005ECAD6 /* PalletteViewController.swift */,
+				B6E3903324490E51005ECAD6 /* RulerViewController.swift */,
+				B6E3903524490E64005ECAD6 /* DiceViewController.swift */,
+				B6E3903724490E6F005ECAD6 /* CoinViewController.swift */,
+				B6E3903924490E7D005ECAD6 /* LockViewController.swift */,
+				B6E3903B24490E89005ECAD6 /* CalculatorViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -181,9 +199,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E3903C24490E89005ECAD6 /* CalculatorViewController.swift in Sources */,
 				B6A712EC2448F89100493FE7 /* MainScreenViewController.swift in Sources */,
 				B6A712E82448F89100493FE7 /* AppDelegate.swift in Sources */,
 				B6A713012449079C00493FE7 /* DraggableItem.swift in Sources */,
+				B6E3903824490E6F005ECAD6 /* CoinViewController.swift in Sources */,
+				B6E3903624490E64005ECAD6 /* DiceViewController.swift in Sources */,
+				B6E3903424490E51005ECAD6 /* RulerViewController.swift in Sources */,
+				B6E3903A24490E7D005ECAD6 /* LockViewController.swift in Sources */,
+				B6E3903224490E28005ECAD6 /* PalletteViewController.swift in Sources */,
 				B6A712EA2448F89100493FE7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
