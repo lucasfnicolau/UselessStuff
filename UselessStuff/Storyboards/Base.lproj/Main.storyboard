@@ -152,39 +152,298 @@
                         <outletCollection property="itemButtons" destination="rGt-vb-hmT" collectionClass="NSMutableArray" id="ZJA-dF-0yV"/>
                         <outletCollection property="itemButtons" destination="QyA-Gz-Ef8" collectionClass="NSMutableArray" id="tug-SL-WJn"/>
                         <outletCollection property="itemButtons" destination="S2P-iD-cqZ" collectionClass="NSMutableArray" id="ClK-kP-k8e"/>
+                        <segue destination="Z9T-nb-0PX" kind="presentation" identifier="pallette" modalPresentationStyle="fullScreen" id="NMU-d5-4lk"/>
+                        <segue destination="k3X-Aq-KDQ" kind="presentation" identifier="ruler" modalPresentationStyle="fullScreen" id="V4q-dp-B1W"/>
+                        <segue destination="YBN-qb-NBP" kind="presentation" identifier="dice" modalPresentationStyle="fullScreen" id="qRv-r8-e4i"/>
+                        <segue destination="3xb-ha-fH1" kind="presentation" identifier="coin" modalPresentationStyle="fullScreen" id="7DU-CH-5yb"/>
+                        <segue destination="EzW-iq-TXe" kind="presentation" identifier="lock" modalPresentationStyle="fullScreen" id="Hzq-9N-8Mu"/>
+                        <segue destination="YGr-Hq-MqG" kind="presentation" identifier="calculator" modalPresentationStyle="fullScreen" id="e1z-P7-vS3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </scene>
-        <!--View Controller-->
+        <!--Pallette View Controller-->
         <scene sceneID="Pvl-41-kSh">
             <objects>
-                <viewController id="Z9T-nb-0PX" sceneMemberID="viewController">
+                <viewController id="Z9T-nb-0PX" customClass="PalletteViewController" customModule="UselessStuff" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dzZ-Ts-0Kc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7us-Ws-bkW">
-                                <rect key="frame" x="148" y="92" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invisible Canvas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7us-Ws-bkW">
+                                <rect key="frame" x="80" y="69" width="254" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUC-Yb-sbG">
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="LUZ-at-egH"/>
+                                    <constraint firstAttribute="height" constant="40" id="y9h-bS-Ely"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="closeButtonTouched:" destination="Z9T-nb-0PX" eventType="touchUpInside" id="iMb-hK-Jwc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="okF-vQ-Ila" firstAttribute="trailing" secondItem="OUC-Yb-sbG" secondAttribute="trailing" constant="20" id="MUi-sH-3CJ"/>
+                            <constraint firstItem="7us-Ws-bkW" firstAttribute="leading" secondItem="okF-vQ-Ila" secondAttribute="leading" constant="80" id="aS5-JG-JkP"/>
+                            <constraint firstItem="7us-Ws-bkW" firstAttribute="centerX" secondItem="dzZ-Ts-0Kc" secondAttribute="centerX" id="bCs-dQ-3ag"/>
+                            <constraint firstItem="OUC-Yb-sbG" firstAttribute="top" secondItem="okF-vQ-Ila" secondAttribute="top" constant="20" id="msd-ki-nv9"/>
+                            <constraint firstItem="7us-Ws-bkW" firstAttribute="centerY" secondItem="OUC-Yb-sbG" secondAttribute="centerY" id="oia-xZ-MDS"/>
+                            <constraint firstItem="OUC-Yb-sbG" firstAttribute="leading" secondItem="7us-Ws-bkW" secondAttribute="trailing" constant="20" id="yjV-c0-euD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="okF-vQ-Ila"/>
                     </view>
+                    <navigationItem key="navigationItem" id="X7D-1V-QoJ"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="7us-Ws-bkW" id="pRd-RB-gsT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3w-xV-5jb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="826" y="110"/>
+            <point key="canvasLocation" x="1300" y="-1712"/>
+        </scene>
+        <!--Coin View Controller-->
+        <scene sceneID="KRA-Mh-tkc">
+            <objects>
+                <viewController id="3xb-ha-fH1" customClass="CoinViewController" customModule="UselessStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dy0-Sn-hqR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xip-em-CjN">
+                                <rect key="frame" x="80" y="69" width="254" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sO-L0-vbp">
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="2f7-8e-zJA"/>
+                                    <constraint firstAttribute="height" constant="40" id="i29-cI-PuG"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="closeButtonTouched:" destination="3xb-ha-fH1" eventType="touchUpInside" id="XfD-Qw-iwq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xip-em-CjN" firstAttribute="centerX" secondItem="dy0-Sn-hqR" secondAttribute="centerX" id="6q9-r3-8Wf"/>
+                            <constraint firstItem="xip-em-CjN" firstAttribute="leading" secondItem="paS-EL-3yQ" secondAttribute="leading" constant="80" id="B3B-H3-URa"/>
+                            <constraint firstItem="3sO-L0-vbp" firstAttribute="top" secondItem="paS-EL-3yQ" secondAttribute="top" constant="20" id="F0a-Yx-vda"/>
+                            <constraint firstItem="3sO-L0-vbp" firstAttribute="leading" secondItem="xip-em-CjN" secondAttribute="trailing" constant="20" id="rVy-PB-Xof"/>
+                            <constraint firstItem="paS-EL-3yQ" firstAttribute="trailing" secondItem="3sO-L0-vbp" secondAttribute="trailing" constant="20" id="ssD-Gl-2lU"/>
+                            <constraint firstItem="xip-em-CjN" firstAttribute="centerY" secondItem="3sO-L0-vbp" secondAttribute="centerY" id="tON-5S-13C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="paS-EL-3yQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5tE-iX-6g8"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="xip-em-CjN" id="sfR-wG-b6p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ytq-1O-G3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1300" y="467"/>
+        </scene>
+        <!--Calculator View Controller-->
+        <scene sceneID="lCd-Jo-rNE">
+            <objects>
+                <viewController id="YGr-Hq-MqG" customClass="CalculatorViewController" customModule="UselessStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9fJ-Ql-XOH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe6-Fq-rrn">
+                                <rect key="frame" x="80" y="69" width="254" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmh-BV-dLI">
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="GSM-cI-sbk"/>
+                                    <constraint firstAttribute="height" constant="40" id="NyX-gB-IpH"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="closeButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="WnE-gV-UNG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fmh-BV-dLI" firstAttribute="top" secondItem="TR7-L5-rVK" secondAttribute="top" constant="20" id="EWm-pD-90k"/>
+                            <constraint firstItem="TR7-L5-rVK" firstAttribute="trailing" secondItem="fmh-BV-dLI" secondAttribute="trailing" constant="20" id="EwT-24-ntd"/>
+                            <constraint firstItem="fmh-BV-dLI" firstAttribute="leading" secondItem="Fe6-Fq-rrn" secondAttribute="trailing" constant="20" id="NXc-xT-WGP"/>
+                            <constraint firstItem="Fe6-Fq-rrn" firstAttribute="centerY" secondItem="fmh-BV-dLI" secondAttribute="centerY" id="THD-Cw-NAY"/>
+                            <constraint firstItem="Fe6-Fq-rrn" firstAttribute="leading" secondItem="TR7-L5-rVK" secondAttribute="leading" constant="80" id="ibM-DB-zdC"/>
+                            <constraint firstItem="Fe6-Fq-rrn" firstAttribute="centerX" secondItem="9fJ-Ql-XOH" secondAttribute="centerX" id="nPT-eG-xxJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TR7-L5-rVK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="F5E-Kf-sCc"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="Fe6-Fq-rrn" id="960-9D-qCz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="By8-Hf-FnQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1300" y="1932"/>
+        </scene>
+        <!--Lock View Controller-->
+        <scene sceneID="Ngl-tb-gql">
+            <objects>
+                <viewController id="EzW-iq-TXe" customClass="LockViewController" customModule="UselessStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mQ7-tu-fvs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strong Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rM-0E-OHZ">
+                                <rect key="frame" x="80" y="69" width="254" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCJ-Jb-Veb">
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7dE-ib-K8p"/>
+                                    <constraint firstAttribute="width" constant="40" id="AG3-wt-IJp"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="closeButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="h6W-au-Whf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qCJ-Jb-Veb" firstAttribute="top" secondItem="GxH-VW-ibq" secondAttribute="top" constant="20" id="56d-Gm-xGg"/>
+                            <constraint firstItem="qCJ-Jb-Veb" firstAttribute="leading" secondItem="0rM-0E-OHZ" secondAttribute="trailing" constant="20" id="HMg-D4-95E"/>
+                            <constraint firstItem="GxH-VW-ibq" firstAttribute="trailing" secondItem="qCJ-Jb-Veb" secondAttribute="trailing" constant="20" id="KlO-NA-ypm"/>
+                            <constraint firstItem="0rM-0E-OHZ" firstAttribute="centerX" secondItem="mQ7-tu-fvs" secondAttribute="centerX" id="fwy-lb-5Kb"/>
+                            <constraint firstItem="0rM-0E-OHZ" firstAttribute="leading" secondItem="GxH-VW-ibq" secondAttribute="leading" constant="80" id="ktB-b1-qnG"/>
+                            <constraint firstItem="0rM-0E-OHZ" firstAttribute="centerY" secondItem="qCJ-Jb-Veb" secondAttribute="centerY" id="obR-jV-qOK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GxH-VW-ibq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9sg-gN-Sw4"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="0rM-0E-OHZ" id="DTZ-EM-uXq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nta-jr-aeW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1300" y="1213"/>
+        </scene>
+        <!--Dice View Controller-->
+        <scene sceneID="yn6-sP-hjM">
+            <objects>
+                <viewController id="YBN-qb-NBP" customClass="DiceViewController" customModule="UselessStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8pq-fT-tfa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic Dice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEk-2c-5ep">
+                                <rect key="frame" x="80" y="69" width="254" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8k-6F-JYZ">
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="THe-Za-EOj"/>
+                                    <constraint firstAttribute="height" constant="40" id="nq2-Kr-EKy"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="closeButtonTouched:" destination="YBN-qb-NBP" eventType="touchUpInside" id="DoF-be-YZU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pEk-2c-5ep" firstAttribute="centerX" secondItem="8pq-fT-tfa" secondAttribute="centerX" id="Ci0-J4-zJc"/>
+                            <constraint firstItem="pEk-2c-5ep" firstAttribute="centerY" secondItem="e8k-6F-JYZ" secondAttribute="centerY" id="Mbj-mi-Tyd"/>
+                            <constraint firstItem="e8k-6F-JYZ" firstAttribute="leading" secondItem="pEk-2c-5ep" secondAttribute="trailing" constant="20" id="Vsb-F3-gn5"/>
+                            <constraint firstItem="vHH-dN-URd" firstAttribute="trailing" secondItem="e8k-6F-JYZ" secondAttribute="trailing" constant="20" id="dwb-Zf-YYj"/>
+                            <constraint firstItem="e8k-6F-JYZ" firstAttribute="top" secondItem="vHH-dN-URd" secondAttribute="top" constant="20" id="ekm-Ue-7xa"/>
+                            <constraint firstItem="pEk-2c-5ep" firstAttribute="leading" secondItem="vHH-dN-URd" secondAttribute="leading" constant="80" id="qEp-Vv-ZSA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vHH-dN-URd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="B3A-aS-NFW"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="pEk-2c-5ep" id="jzA-cu-MFH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N3v-lC-Q0M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1300" y="-267"/>
+        </scene>
+        <!--Ruler View Controller-->
+        <scene sceneID="I5S-3d-cJL">
+            <objects>
+                <viewController id="k3X-Aq-KDQ" customClass="RulerViewController" customModule="UselessStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jcH-75-hnW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1mm Ruler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkS-Wh-q4E">
+                                <rect key="frame" x="80" y="69" width="254" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSS-WB-uHt">
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="687-MW-Mx6"/>
+                                    <constraint firstAttribute="height" constant="40" id="Fcw-Lw-r4V"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="closeButtonTouched:" destination="k3X-Aq-KDQ" eventType="touchUpInside" id="eq1-Jq-PrB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GkS-Wh-q4E" firstAttribute="leading" secondItem="VOx-0e-hV0" secondAttribute="leading" constant="80" id="8yQ-2A-wz4"/>
+                            <constraint firstItem="GkS-Wh-q4E" firstAttribute="centerY" secondItem="MSS-WB-uHt" secondAttribute="centerY" id="frZ-Kz-hcE"/>
+                            <constraint firstItem="MSS-WB-uHt" firstAttribute="top" secondItem="VOx-0e-hV0" secondAttribute="top" constant="20" id="mDu-Jg-kBF"/>
+                            <constraint firstItem="VOx-0e-hV0" firstAttribute="trailing" secondItem="MSS-WB-uHt" secondAttribute="trailing" constant="20" id="mIN-am-MgD"/>
+                            <constraint firstItem="GkS-Wh-q4E" firstAttribute="centerX" secondItem="jcH-75-hnW" secondAttribute="centerX" id="w9h-Yv-J2K"/>
+                            <constraint firstItem="MSS-WB-uHt" firstAttribute="leading" secondItem="GkS-Wh-q4E" secondAttribute="trailing" constant="20" id="ywS-0q-ox2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VOx-0e-hV0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iJW-oI-RQz"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="GkS-Wh-q4E" id="0WM-5T-bqW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oiW-Uc-aUI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1300" y="-1021"/>
         </scene>
     </scenes>
     <resources>
         <image name="calculator" width="85" height="100"/>
+        <image name="close" width="57" height="57"/>
         <image name="coin" width="103" height="103"/>
         <image name="dice" width="82" height="83"/>
         <image name="frame" width="186" height="258"/>
