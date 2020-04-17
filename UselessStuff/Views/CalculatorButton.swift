@@ -1,5 +1,5 @@
 //
-//  KeyboardButton.swift
+//  CalculatorButton.swift
 //  UselessStuff
 //
 //  Created by Lucas Fernandez Nicolau on 17/04/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KeyboardButton: UIButton {
+class CalculatorButton: UIButton {
 
     override func awakeFromNib() {
         super.awakeFromNib()

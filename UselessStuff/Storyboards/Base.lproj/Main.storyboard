@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="DS-DIGI.TTF">
+            <string>DS-Digital</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -158,8 +163,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invisible Canvas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7us-Ws-bkW">
-                                <rect key="frame" x="80" y="69" width="254" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invisible Canvas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7us-Ws-bkW">
+                                <rect key="frame" x="80" y="69.5" width="254" height="29.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -204,7 +209,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xip-em-CjN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Converter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xip-em-CjN">
                                 <rect key="frame" x="80" y="69.5" width="254" height="29.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
                                 <nil key="textColor"/>
@@ -309,8 +314,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe6-Fq-rrn">
-                                <rect key="frame" x="80" y="69" width="254" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Archimedes Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe6-Fq-rrn">
+                                <rect key="frame" x="80" y="69.5" width="254" height="29.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -326,26 +331,338 @@
                                     <action selector="closeButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="WnE-gV-UNG"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFG-Vm-Zsl">
+                                <rect key="frame" x="-73.5" y="162.5" width="561" height="571"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="fb6-XM-kO4">
+                                <rect key="frame" x="20" y="193.5" width="374" height="509.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="S3y-E5-B4f">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uSS-E3-Y5C">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="80"/>
+                                                <color key="backgroundColor" red="0.79215686269999996" green="0.85882352939999995" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="6ch-mp-whZ"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="62"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FR-oJ-Dnc">
+                                                <rect key="frame" x="339" y="0.0" width="35" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="Sha-d8-k5Y"/>
+                                                    <constraint firstAttribute="height" constant="80" id="p5g-46-RpP"/>
+                                                </constraints>
+                                                <state key="normal" title="clear">
+                                                    <color key="titleColor" red="0.93725490199999995" green="0.6588235294" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="clearButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="tyr-0c-vLT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EO9-eg-WGL">
+                                        <rect key="frame" x="0.0" y="113" width="374" height="396.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UB0-TZ-sbm">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="54.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBP-Jk-Ou8" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="54.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="dBP-Jk-Ou8" secondAttribute="height" multiplier="1:0.7" id="lHM-zw-XOu"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="M8L-TS-ULd"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="7DC-gC-yaj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hym-wi-IJg" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="98.5" y="0.0" width="78.5" height="54.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="hym-wi-IJg" secondAttribute="height" multiplier="1:0.7" id="mo5-iY-YeT"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="hLz-Wr-mQF"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="0gw-Fl-b2W"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhw-kS-A8T" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="197" y="0.0" width="78.5" height="54.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="zhw-kS-A8T" secondAttribute="height" multiplier="1:0.7" id="uB9-vK-XCE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="zcq-XO-ZUV"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="mWc-H3-rtY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kX-w7-zq3" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="295.5" y="0.0" width="78.5" height="54.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="2kX-w7-zq3" secondAttribute="height" multiplier="1:0.7" id="Cdw-8G-tOw"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="÷">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="hLJ-EE-RD8"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="GjY-jJ-LNy"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lVK-tN-GWJ">
+                                                <rect key="frame" x="0.0" y="113.5" width="374" height="55"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocr-Tw-eoX" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Ocr-Tw-eoX" secondAttribute="height" multiplier="1:0.7" id="qCC-a7-eZW"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="Idx-zC-m2F"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="tvR-YX-GY3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQB-6c-XkI" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="98.5" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="KQB-6c-XkI" secondAttribute="height" multiplier="1:0.7" id="aF5-eR-j1w"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="7cM-LV-17d"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="BAh-wn-Z6l"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhO-3j-8qk" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="197" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="NhO-3j-8qk" secondAttribute="height" multiplier="1:0.7" id="vf1-aP-Pic"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="N78-Wk-QbL"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="qAk-Ki-jBf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xya-f2-fqM" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="295.5" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="xya-f2-fqM" secondAttribute="height" multiplier="1:0.7" id="Jcf-b9-r7M"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="X">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="xk2-IV-KCz"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="cUq-Fi-AXw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="m14-H1-CoE">
+                                                <rect key="frame" x="0.0" y="227.5" width="374" height="55"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4K-wT-SaN" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="W4K-wT-SaN" secondAttribute="height" multiplier="1:0.7" id="Woi-iq-uii"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="LM6-be-QsL"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="iEL-YH-bDx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yI-zC-YYQ" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="98.5" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="3yI-zC-YYQ" secondAttribute="height" multiplier="1:0.7" id="mTs-VG-ril"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="xU4-o7-3M3"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="ElV-ig-QOj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35j-6T-gbo" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="197" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="35j-6T-gbo" secondAttribute="height" multiplier="1:0.7" id="8Lx-gw-z08"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="7nC-rx-jGk"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="rGE-ld-5JX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMf-sB-53m" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="295.5" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="zMf-sB-53m" secondAttribute="height" multiplier="1:0.7" id="8fq-xe-4o3"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="–">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="4GQ-qh-IrP"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="UMm-qE-gre"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BhD-yp-nG9">
+                                                <rect key="frame" x="0.0" y="341.5" width="374" height="55"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBb-iZ-58J" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="jBb-iZ-58J" secondAttribute="height" multiplier="1:0.7" id="rHL-do-vyF"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="qgg-ZC-5Ty"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="TVu-Ry-8b6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndb-OY-8NE" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="98.5" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ndb-OY-8NE" secondAttribute="height" multiplier="1:0.7" id="whZ-9c-yEi"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title=".">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="14g-NE-1xf"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="gxS-9Q-dqu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cav-eQ-uSN" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="197" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Cav-eQ-uSN" secondAttribute="height" multiplier="1:0.7" id="MqJ-Rc-x1G"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="+">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="yBp-5O-CSW"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="GXz-bh-u4L"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAm-3v-Kt4" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="295.5" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" red="0.93725490196078431" green="0.6588235294117647" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="LAm-3v-Kt4" secondAttribute="height" multiplier="1:0.7" id="qGN-Ye-Tq1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="KFQ-7m-by4"/>
+                                                            <action selector="equalButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="h7M-ff-N7W"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="F0f-hL-HUR"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="TR7-L5-rVK" firstAttribute="trailing" secondItem="fb6-XM-kO4" secondAttribute="trailing" constant="20" id="1h9-JA-jLQ"/>
+                            <constraint firstItem="xFG-Vm-Zsl" firstAttribute="height" secondItem="fb6-XM-kO4" secondAttribute="height" multiplier="1.12" id="2Sy-nt-Azd"/>
+                            <constraint firstItem="xFG-Vm-Zsl" firstAttribute="centerX" secondItem="fb6-XM-kO4" secondAttribute="centerX" id="7YG-jO-aeK"/>
                             <constraint firstItem="fmh-BV-dLI" firstAttribute="top" secondItem="TR7-L5-rVK" secondAttribute="top" constant="20" id="EWm-pD-90k"/>
                             <constraint firstItem="TR7-L5-rVK" firstAttribute="trailing" secondItem="fmh-BV-dLI" secondAttribute="trailing" constant="20" id="EwT-24-ntd"/>
+                            <constraint firstItem="fb6-XM-kO4" firstAttribute="centerY" secondItem="9fJ-Ql-XOH" secondAttribute="centerY" id="HvV-JQ-cXU"/>
                             <constraint firstItem="fmh-BV-dLI" firstAttribute="leading" secondItem="Fe6-Fq-rrn" secondAttribute="trailing" constant="20" id="NXc-xT-WGP"/>
                             <constraint firstItem="Fe6-Fq-rrn" firstAttribute="centerY" secondItem="fmh-BV-dLI" secondAttribute="centerY" id="THD-Cw-NAY"/>
+                            <constraint firstItem="xFG-Vm-Zsl" firstAttribute="width" secondItem="fb6-XM-kO4" secondAttribute="width" multiplier="1.5" id="V3W-zp-veQ"/>
                             <constraint firstItem="Fe6-Fq-rrn" firstAttribute="leading" secondItem="TR7-L5-rVK" secondAttribute="leading" constant="80" id="ibM-DB-zdC"/>
+                            <constraint firstItem="fb6-XM-kO4" firstAttribute="leading" secondItem="TR7-L5-rVK" secondAttribute="leading" constant="20" id="jwS-3R-BT3"/>
                             <constraint firstItem="Fe6-Fq-rrn" firstAttribute="centerX" secondItem="9fJ-Ql-XOH" secondAttribute="centerX" id="nPT-eG-xxJ"/>
+                            <constraint firstItem="xFG-Vm-Zsl" firstAttribute="centerY" secondItem="fb6-XM-kO4" secondAttribute="centerY" id="x6F-hX-NDu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TR7-L5-rVK"/>
                     </view>
                     <navigationItem key="navigationItem" id="F5E-Kf-sCc"/>
                     <connections>
+                        <outlet property="calculatorTextField" destination="uSS-E3-Y5C" id="3rm-FB-MP7"/>
                         <outlet property="titleLabel" destination="Fe6-Fq-rrn" id="960-9D-qCz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="By8-Hf-FnQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="1932"/>
+            <point key="canvasLocation" x="1298.5507246376812" y="1931.9196428571427"/>
         </scene>
         <!--Lock View Controller-->
         <scene sceneID="Ngl-tb-gql">
@@ -355,7 +672,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strong Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rM-0E-OHZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strong Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rM-0E-OHZ">
                                 <rect key="frame" x="80" y="69.5" width="254" height="29.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
                                 <nil key="textColor"/>
@@ -627,8 +944,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic Dice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEk-2c-5ep">
-                                <rect key="frame" x="80" y="69" width="254" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic Dice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEk-2c-5ep">
+                                <rect key="frame" x="80" y="69.5" width="254" height="29.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -684,8 +1001,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 cm Ruler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkS-Wh-q4E">
-                                <rect key="frame" x="80" y="69" width="254" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 cm Ruler" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkS-Wh-q4E">
+                                <rect key="frame" x="80" y="69.5" width="254" height="29.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

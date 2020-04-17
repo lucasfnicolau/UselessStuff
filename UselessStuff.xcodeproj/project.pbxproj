@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B697B8CA244A3D9700F5F729 /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B697B8C9244A3D9700F5F729 /* CalculatorButton.swift */; };
+		B697B8CC244A3EE200F5F729 /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B697B8CB244A3EE200F5F729 /* DS-DIGI.TTF */; };
 		B6A712E82448F89100493FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A712E72448F89100493FE7 /* AppDelegate.swift */; };
 		B6A712EA2448F89100493FE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A712E92448F89100493FE7 /* SceneDelegate.swift */; };
 		B6A712EC2448F89100493FE7 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A712EB2448F89100493FE7 /* MainScreenViewController.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B697B8C9244A3D9700F5F729 /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
+		B697B8CB244A3EE200F5F729 /* DS-DIGI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGI.TTF"; sourceTree = "<group>"; };
 		B6A712E42448F89100493FE7 /* UselessStuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UselessStuff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A712E72448F89100493FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6A712E92448F89100493FE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 		B6A712E62448F89100493FE7 /* UselessStuff */ = {
 			isa = PBXGroup;
 			children = (
+				B697B8CB244A3EE200F5F729 /* DS-DIGI.TTF */,
 				B6E3903E244918CA005ECAD6 /* ViewModels */,
 				B6A712FF2449062F00493FE7 /* Storyboards */,
 				B6A712FE2449062300493FE7 /* Supporting Files */,
@@ -116,6 +121,7 @@
 				B6A713002449079C00493FE7 /* DraggableItem.swift */,
 				B6C9236E244A290E00970B3D /* CurrencyTableViewCell.swift */,
 				B6C92370244A30AC00970B3D /* KeyboardButton.swift */,
+				B697B8C9244A3D9700F5F729 /* CalculatorButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B697B8CC244A3EE200F5F729 /* DS-DIGI.TTF in Resources */,
 				B6A712F42448F89700493FE7 /* LaunchScreen.storyboard in Resources */,
 				B6A712F12448F89700493FE7 /* Assets.xcassets in Resources */,
 				B6A712EF2448F89100493FE7 /* Main.storyboard in Resources */,
@@ -227,6 +234,7 @@
 			files = (
 				B6E3904524491EB1005ECAD6 /* CurrencyTextField.swift in Sources */,
 				B6E3903C24490E89005ECAD6 /* CalculatorViewController.swift in Sources */,
+				B697B8CA244A3D9700F5F729 /* CalculatorButton.swift in Sources */,
 				B6A712EC2448F89100493FE7 /* MainScreenViewController.swift in Sources */,
 				B6E3904624491EB1005ECAD6 /* DarkRoundedTextField.swift in Sources */,
 				B6A712E82448F89100493FE7 /* AppDelegate.swift in Sources */,
