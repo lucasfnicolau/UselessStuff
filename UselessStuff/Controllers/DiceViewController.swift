@@ -10,6 +10,8 @@ import UIKit
 
 class DiceViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    var faces = [UIImage]()
 
     override var prefersStatusBarHidden: Bool {
         return true
@@ -17,8 +19,14 @@ class DiceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        for i in 1...6 {
+            faces.append(UIImage(named: "\(i)") ?? UIImage())
+        }
+        imageView.animationImages = faces.shuffled()
+        imageView.animationRepeatCount = -1
+        imageView.animationDuration = 0.65
+        imageView.startAnimating()
     }
-
 
     @IBAction func closeButtonTouched(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)

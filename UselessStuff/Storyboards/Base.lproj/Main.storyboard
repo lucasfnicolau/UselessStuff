@@ -644,26 +644,37 @@
                                     <action selector="closeButtonTouched:" destination="YBN-qb-NBP" eventType="touchUpInside" id="DoF-be-YZU"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZFC-ci-BTx">
+                                <rect key="frame" x="60" y="301" width="294" height="294"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZFC-ci-BTx" secondAttribute="height" multiplier="1:1" id="uWJ-Xk-P54"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="ZFC-ci-BTx" firstAttribute="centerX" secondItem="8pq-fT-tfa" secondAttribute="centerX" id="15b-OL-RAE"/>
+                            <constraint firstItem="ZFC-ci-BTx" firstAttribute="leading" secondItem="vHH-dN-URd" secondAttribute="leading" constant="60" id="3p6-Hc-3EV"/>
                             <constraint firstItem="pEk-2c-5ep" firstAttribute="centerX" secondItem="8pq-fT-tfa" secondAttribute="centerX" id="Ci0-J4-zJc"/>
                             <constraint firstItem="pEk-2c-5ep" firstAttribute="centerY" secondItem="e8k-6F-JYZ" secondAttribute="centerY" id="Mbj-mi-Tyd"/>
                             <constraint firstItem="e8k-6F-JYZ" firstAttribute="leading" secondItem="pEk-2c-5ep" secondAttribute="trailing" constant="20" id="Vsb-F3-gn5"/>
                             <constraint firstItem="vHH-dN-URd" firstAttribute="trailing" secondItem="e8k-6F-JYZ" secondAttribute="trailing" constant="20" id="dwb-Zf-YYj"/>
                             <constraint firstItem="e8k-6F-JYZ" firstAttribute="top" secondItem="vHH-dN-URd" secondAttribute="top" constant="20" id="ekm-Ue-7xa"/>
+                            <constraint firstItem="vHH-dN-URd" firstAttribute="trailing" secondItem="ZFC-ci-BTx" secondAttribute="trailing" constant="60" id="qE8-sR-QM7"/>
                             <constraint firstItem="pEk-2c-5ep" firstAttribute="leading" secondItem="vHH-dN-URd" secondAttribute="leading" constant="80" id="qEp-Vv-ZSA"/>
+                            <constraint firstItem="ZFC-ci-BTx" firstAttribute="centerY" secondItem="8pq-fT-tfa" secondAttribute="centerY" id="zYm-e5-Gh1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vHH-dN-URd"/>
                     </view>
                     <navigationItem key="navigationItem" id="B3A-aS-NFW"/>
                     <connections>
+                        <outlet property="imageView" destination="ZFC-ci-BTx" id="cTU-A5-OCd"/>
                         <outlet property="titleLabel" destination="pEk-2c-5ep" id="jzA-cu-MFH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N3v-lC-Q0M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="-267"/>
+            <point key="canvasLocation" x="1298.5507246376812" y="-267.1875"/>
         </scene>
         <!--Ruler View Controller-->
         <scene sceneID="I5S-3d-cJL">
@@ -713,6 +724,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="800" height="800"/>
         <image name="calculator" width="85" height="100"/>
         <image name="close" width="57" height="57"/>
         <image name="coin" width="103" height="103"/>

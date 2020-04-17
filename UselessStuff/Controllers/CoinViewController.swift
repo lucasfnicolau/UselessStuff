@@ -35,7 +35,6 @@ class CoinViewController: UIViewController {
         tableView.tableFooterView = UIView(frame: .zero)
     }
 
-
     @IBAction func closeButtonTouched(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
