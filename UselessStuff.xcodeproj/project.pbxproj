@@ -7,23 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B697B8CA244A3D9700F5F729 /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B697B8C9244A3D9700F5F729 /* CalculatorButton.swift */; };
+		B697B8CC244A3EE200F5F729 /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B697B8CB244A3EE200F5F729 /* DS-DIGI.TTF */; };
 		B6A712E82448F89100493FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A712E72448F89100493FE7 /* AppDelegate.swift */; };
 		B6A712EA2448F89100493FE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A712E92448F89100493FE7 /* SceneDelegate.swift */; };
-		B6A712EC2448F89100493FE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A712EB2448F89100493FE7 /* ViewController.swift */; };
+		B6A712EC2448F89100493FE7 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A712EB2448F89100493FE7 /* MainScreenViewController.swift */; };
 		B6A712EF2448F89100493FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A712ED2448F89100493FE7 /* Main.storyboard */; };
 		B6A712F12448F89700493FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A712F02448F89700493FE7 /* Assets.xcassets */; };
 		B6A712F42448F89700493FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A712F22448F89700493FE7 /* LaunchScreen.storyboard */; };
+		B6A713012449079C00493FE7 /* DraggableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A713002449079C00493FE7 /* DraggableItem.swift */; };
+		B6C9236F244A290E00970B3D /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C9236E244A290E00970B3D /* CurrencyTableViewCell.swift */; };
+		B6C92371244A30AC00970B3D /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C92370244A30AC00970B3D /* KeyboardButton.swift */; };
+		B6E3903224490E28005ECAD6 /* PalletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903124490E28005ECAD6 /* PalletteViewController.swift */; };
+		B6E3903424490E51005ECAD6 /* RulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903324490E51005ECAD6 /* RulerViewController.swift */; };
+		B6E3903624490E64005ECAD6 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903524490E64005ECAD6 /* DiceViewController.swift */; };
+		B6E3903824490E6F005ECAD6 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903724490E6F005ECAD6 /* CoinViewController.swift */; };
+		B6E3903A24490E7D005ECAD6 /* LockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903924490E7D005ECAD6 /* LockViewController.swift */; };
+		B6E3903C24490E89005ECAD6 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903B24490E89005ECAD6 /* CalculatorViewController.swift */; };
+		B6E3904024491914005ECAD6 /* UselessStuffProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903F24491914005ECAD6 /* UselessStuffProtocol.swift */; };
+		B6E390422449195C005ECAD6 /* UselessStuffDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E390412449195C005ECAD6 /* UselessStuffDelegate.swift */; };
+		B6E3904524491EB1005ECAD6 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3904324491EB1005ECAD6 /* CurrencyTextField.swift */; };
+		B6E3904624491EB1005ECAD6 /* DarkRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3904424491EB1005ECAD6 /* DarkRoundedTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B697B8C9244A3D9700F5F729 /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
+		B697B8CB244A3EE200F5F729 /* DS-DIGI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGI.TTF"; sourceTree = "<group>"; };
 		B6A712E42448F89100493FE7 /* UselessStuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UselessStuff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A712E72448F89100493FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6A712E92448F89100493FE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B6A712EB2448F89100493FE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B6A712EB2448F89100493FE7 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		B6A712EE2448F89100493FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6A712F02448F89700493FE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6A712F32448F89700493FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6A712F52448F89700493FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A713002449079C00493FE7 /* DraggableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableItem.swift; sourceTree = "<group>"; };
+		B6C9236E244A290E00970B3D /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		B6C92370244A30AC00970B3D /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
+		B6E3903124490E28005ECAD6 /* PalletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalletteViewController.swift; sourceTree = "<group>"; };
+		B6E3903324490E51005ECAD6 /* RulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerViewController.swift; sourceTree = "<group>"; };
+		B6E3903524490E64005ECAD6 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
+		B6E3903724490E6F005ECAD6 /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
+		B6E3903924490E7D005ECAD6 /* LockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockViewController.swift; sourceTree = "<group>"; };
+		B6E3903B24490E89005ECAD6 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		B6E3903F24491914005ECAD6 /* UselessStuffProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UselessStuffProtocol.swift; sourceTree = "<group>"; };
+		B6E390412449195C005ECAD6 /* UselessStuffDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UselessStuffDelegate.swift; sourceTree = "<group>"; };
+		B6E3904324491EB1005ECAD6 /* CurrencyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		B6E3904424491EB1005ECAD6 /* DarkRoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkRoundedTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,8 +70,8 @@
 		B6A712DB2448F89100493FE7 = {
 			isa = PBXGroup;
 			children = (
-				B6A712E62448F89100493FE7 /* UselessStuff */,
 				B6A712E52448F89100493FE7 /* Products */,
+				B6A712E62448F89100493FE7 /* UselessStuff */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +86,78 @@
 		B6A712E62448F89100493FE7 /* UselessStuff */ = {
 			isa = PBXGroup;
 			children = (
-				B6A712E72448F89100493FE7 /* AppDelegate.swift */,
-				B6A712E92448F89100493FE7 /* SceneDelegate.swift */,
-				B6A712EB2448F89100493FE7 /* ViewController.swift */,
-				B6A712ED2448F89100493FE7 /* Main.storyboard */,
+				B697B8CB244A3EE200F5F729 /* DS-DIGI.TTF */,
+				B6E3903E244918CA005ECAD6 /* ViewModels */,
+				B6A712FF2449062F00493FE7 /* Storyboards */,
+				B6A712FE2449062300493FE7 /* Supporting Files */,
+				B6A712FD2449061A00493FE7 /* Models */,
+				B6A712FC2449061400493FE7 /* Views */,
+				B6A712FB244905FC00493FE7 /* Controllers */,
 				B6A712F02448F89700493FE7 /* Assets.xcassets */,
-				B6A712F22448F89700493FE7 /* LaunchScreen.storyboard */,
 				B6A712F52448F89700493FE7 /* Info.plist */,
 			);
 			path = UselessStuff;
+			sourceTree = "<group>";
+		};
+		B6A712FB244905FC00493FE7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6A712EB2448F89100493FE7 /* MainScreenViewController.swift */,
+				B6E3903124490E28005ECAD6 /* PalletteViewController.swift */,
+				B6E3903324490E51005ECAD6 /* RulerViewController.swift */,
+				B6E3903524490E64005ECAD6 /* DiceViewController.swift */,
+				B6E3903724490E6F005ECAD6 /* CoinViewController.swift */,
+				B6E3903924490E7D005ECAD6 /* LockViewController.swift */,
+				B6E3903B24490E89005ECAD6 /* CalculatorViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B6A712FC2449061400493FE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3904324491EB1005ECAD6 /* CurrencyTextField.swift */,
+				B6E3904424491EB1005ECAD6 /* DarkRoundedTextField.swift */,
+				B6A713002449079C00493FE7 /* DraggableItem.swift */,
+				B6C9236E244A290E00970B3D /* CurrencyTableViewCell.swift */,
+				B6C92370244A30AC00970B3D /* KeyboardButton.swift */,
+				B697B8C9244A3D9700F5F729 /* CalculatorButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6A712FD2449061A00493FE7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B6A712FE2449062300493FE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6A712E72448F89100493FE7 /* AppDelegate.swift */,
+				B6A712E92448F89100493FE7 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6A712FF2449062F00493FE7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B6A712ED2448F89100493FE7 /* Main.storyboard */,
+				B6A712F22448F89700493FE7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B6E3903E244918CA005ECAD6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3903F24491914005ECAD6 /* UselessStuffProtocol.swift */,
+				B6E390412449195C005ECAD6 /* UselessStuffDelegate.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B697B8CC244A3EE200F5F729 /* DS-DIGI.TTF in Resources */,
 				B6A712F42448F89700493FE7 /* LaunchScreen.storyboard in Resources */,
 				B6A712F12448F89700493FE7 /* Assets.xcassets in Resources */,
 				B6A712EF2448F89100493FE7 /* Main.storyboard in Resources */,
@@ -138,8 +232,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A712EC2448F89100493FE7 /* ViewController.swift in Sources */,
+				B6E3904524491EB1005ECAD6 /* CurrencyTextField.swift in Sources */,
+				B6E3903C24490E89005ECAD6 /* CalculatorViewController.swift in Sources */,
+				B697B8CA244A3D9700F5F729 /* CalculatorButton.swift in Sources */,
+				B6A712EC2448F89100493FE7 /* MainScreenViewController.swift in Sources */,
+				B6E3904624491EB1005ECAD6 /* DarkRoundedTextField.swift in Sources */,
 				B6A712E82448F89100493FE7 /* AppDelegate.swift in Sources */,
+				B6A713012449079C00493FE7 /* DraggableItem.swift in Sources */,
+				B6E390422449195C005ECAD6 /* UselessStuffDelegate.swift in Sources */,
+				B6E3903824490E6F005ECAD6 /* CoinViewController.swift in Sources */,
+				B6E3903624490E64005ECAD6 /* DiceViewController.swift in Sources */,
+				B6E3903424490E51005ECAD6 /* RulerViewController.swift in Sources */,
+				B6E3904024491914005ECAD6 /* UselessStuffProtocol.swift in Sources */,
+				B6E3903A24490E7D005ECAD6 /* LockViewController.swift in Sources */,
+				B6C92371244A30AC00970B3D /* KeyboardButton.swift in Sources */,
+				B6E3903224490E28005ECAD6 /* PalletteViewController.swift in Sources */,
+				B6C9236F244A290E00970B3D /* CurrencyTableViewCell.swift in Sources */,
 				B6A712EA2448F89100493FE7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lucasfn.UselessStuff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +420,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lucasfn.UselessStuff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

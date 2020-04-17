@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DS-DIGI.TTF">
+            <string>DS-Digital</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="UselessStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shelf" translatesAutoresizingMaskIntoConstraints="NO" id="wKG-IG-Mvh">
+                                <rect key="frame" x="0.0" y="362" width="414" height="500"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="N1a-QW-8ZV">
+                                <rect key="frame" x="20" y="54" width="374" height="270"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phF-Hu-hTf" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
+                                <rect key="frame" x="152" y="274" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="phF-Hu-hTf" secondAttribute="height" id="M1w-wc-J11"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="pallette"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="pallette"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zY7-jh-w1c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVs-nt-25U" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
+                                <rect key="frame" x="155" y="274" width="104" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QVs-nt-25U" secondAttribute="height" multiplier="1:1" id="KQb-qb-c2S"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="ruler"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="ruler"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5HD-mH-hyh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vde-wk-Je8" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
+                                <rect key="frame" x="165.5" y="274" width="83" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vde-wk-Je8" secondAttribute="height" multiplier="1:1" id="smq-QN-JTL"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="dice"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="dice"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hI-00-uYF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGt-vb-hmT" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
+                                <rect key="frame" x="155.5" y="274" width="103" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rGt-vb-hmT" secondAttribute="height" multiplier="1:1" id="d6y-9E-MHv"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="coin"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="coin"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U4h-JW-aFk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyA-Gz-Ef8" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
+                                <rect key="frame" x="164" y="274" width="86" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QyA-Gz-Ef8" secondAttribute="height" multiplier="0.8:1" id="t0o-Kb-TYm"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="lock"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="lock"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7il-iF-Y5B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2P-iD-cqZ" customClass="DraggableItem" customModule="UselessStuff" customModuleProvider="target">
+                                <rect key="frame" x="164.5" y="274" width="85" height="113.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="S2P-iD-cqZ" secondAttribute="height" multiplier="0.75:1" id="pnp-CZ-xKZ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="calculator"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rawItem" value="calculator"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xc8-PK-2Cz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94509803921568625" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QyA-Gz-Ef8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Jd-3P-1Ol"/>
+                            <constraint firstItem="rGt-vb-hmT" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.114955" id="7SJ-05-QFw"/>
+                            <constraint firstItem="rGt-vb-hmT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7kI-KI-PJN"/>
+                            <constraint firstItem="wKG-IG-Mvh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="BDN-hL-ERN"/>
+                            <constraint firstItem="QyA-Gz-Ef8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.11942" id="JW3-gW-Tnj"/>
+                            <constraint firstItem="wKG-IG-Mvh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.558036" id="OOF-Le-lSn"/>
+                            <constraint firstItem="QVs-nt-25U" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.116071" id="Ow7-Xi-OWS"/>
+                            <constraint firstItem="S2P-iD-cqZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rft-UQ-64T"/>
+                            <constraint firstItem="vde-wk-Je8" firstAttribute="top" secondItem="N1a-QW-8ZV" secondAttribute="bottom" constant="-50" id="Rhx-9J-5y0"/>
+                            <constraint firstItem="wKG-IG-Mvh" firstAttribute="top" secondItem="N1a-QW-8ZV" secondAttribute="bottom" constant="38" id="SIn-yK-Cgl"/>
+                            <constraint firstItem="QVs-nt-25U" firstAttribute="top" secondItem="N1a-QW-8ZV" secondAttribute="bottom" constant="-50" id="Sdh-wS-5WB"/>
+                            <constraint firstItem="phF-Hu-hTf" firstAttribute="top" secondItem="N1a-QW-8ZV" secondAttribute="bottom" constant="-50" id="bAn-Zb-6Y4"/>
+                            <constraint firstItem="S2P-iD-cqZ" firstAttribute="top" secondItem="N1a-QW-8ZV" secondAttribute="bottom" constant="-50" id="cLL-O9-bPZ"/>
+                            <constraint firstItem="S2P-iD-cqZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.126674" id="dll-38-vVm"/>
+                            <constraint firstItem="phF-Hu-hTf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eOd-gP-BYm"/>
+                            <constraint firstItem="vde-wk-Je8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eaq-OQ-Q0C"/>
+                            <constraint firstItem="N1a-QW-8ZV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="emO-Nx-AZ0"/>
+                            <constraint firstItem="vde-wk-Je8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0926339" id="etl-VI-ki5"/>
+                            <constraint firstItem="phF-Hu-hTf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.122768" id="ffg-7K-nUu"/>
+                            <constraint firstItem="wKG-IG-Mvh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kjQ-Yd-QUi"/>
+                            <constraint firstItem="QyA-Gz-Ef8" firstAttribute="top" secondItem="N1a-QW-8ZV" secondAttribute="bottom" constant="-50" id="lNa-hG-1gD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N1a-QW-8ZV" secondAttribute="trailing" constant="20" id="m5b-ch-55R"/>
+                            <constraint firstItem="rGt-vb-hmT" firstAttribute="top" secondItem="N1a-QW-8ZV" secondAttribute="bottom" constant="-50" id="qsK-sd-RIL"/>
+                            <constraint firstItem="wKG-IG-Mvh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rfJ-EW-9AM"/>
+                            <constraint firstItem="QVs-nt-25U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uvK-Bn-nKS"/>
+                            <constraint firstItem="N1a-QW-8ZV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="x8g-KI-IeJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="draggableItems" destination="phF-Hu-hTf" collectionClass="NSMutableArray" id="IsU-Ax-LSm"/>
+                        <outletCollection property="draggableItems" destination="QVs-nt-25U" collectionClass="NSMutableArray" id="fXS-5N-L6G"/>
+                        <outletCollection property="draggableItems" destination="vde-wk-Je8" collectionClass="NSMutableArray" id="Xjf-Ux-nuu"/>
+                        <outletCollection property="draggableItems" destination="rGt-vb-hmT" collectionClass="NSMutableArray" id="ZJA-dF-0yV"/>
+                        <outletCollection property="draggableItems" destination="QyA-Gz-Ef8" collectionClass="NSMutableArray" id="tug-SL-WJn"/>
+                        <outletCollection property="draggableItems" destination="S2P-iD-cqZ" collectionClass="NSMutableArray" id="ClK-kP-k8e"/>
+                        <segue destination="Z9T-nb-0PX" kind="presentation" identifier="pallette" modalPresentationStyle="fullScreen" id="NMU-d5-4lk"/>
+                        <segue destination="k3X-Aq-KDQ" kind="presentation" identifier="ruler" modalPresentationStyle="fullScreen" id="V4q-dp-B1W"/>
+                        <segue destination="YBN-qb-NBP" kind="presentation" identifier="dice" modalPresentationStyle="fullScreen" id="qRv-r8-e4i"/>
+                        <segue destination="3xb-ha-fH1" kind="presentation" identifier="coin" modalPresentationStyle="fullScreen" id="7DU-CH-5yb"/>
+                        <segue destination="EzW-iq-TXe" kind="presentation" identifier="lock" modalPresentationStyle="fullScreen" id="Hzq-9N-8Mu"/>
+                        <segue destination="YGr-Hq-MqG" kind="presentation" identifier="calculator" modalPresentationStyle="fullScreen" id="e1z-P7-vS3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+        <!--Pallette View Controller-->
+        <scene sceneID="Pvl-41-kSh">
+            <objects>
+                <viewController id="Z9T-nb-0PX" customClass="PalletteViewController" customModule="UselessStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dzZ-Ts-0Kc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invisible Canvas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7us-Ws-bkW">
+                                <rect key="frame" x="80" y="69.5" width="254" height="29.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUC-Yb-sbG">
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="LUZ-at-egH"/>
+                                    <constraint firstAttribute="height" constant="40" id="y9h-bS-Ely"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="closeButtonTouched:" destination="Z9T-nb-0PX" eventType="touchUpInside" id="iMb-hK-Jwc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="okF-vQ-Ila" firstAttribute="trailing" secondItem="OUC-Yb-sbG" secondAttribute="trailing" constant="20" id="MUi-sH-3CJ"/>
+                            <constraint firstItem="7us-Ws-bkW" firstAttribute="leading" secondItem="okF-vQ-Ila" secondAttribute="leading" constant="80" id="aS5-JG-JkP"/>
+                            <constraint firstItem="7us-Ws-bkW" firstAttribute="centerX" secondItem="dzZ-Ts-0Kc" secondAttribute="centerX" id="bCs-dQ-3ag"/>
+                            <constraint firstItem="OUC-Yb-sbG" firstAttribute="top" secondItem="okF-vQ-Ila" secondAttribute="top" constant="20" id="msd-ki-nv9"/>
+                            <constraint firstItem="7us-Ws-bkW" firstAttribute="centerY" secondItem="OUC-Yb-sbG" secondAttribute="centerY" id="oia-xZ-MDS"/>
+                            <constraint firstItem="OUC-Yb-sbG" firstAttribute="leading" secondItem="7us-Ws-bkW" secondAttribute="trailing" constant="20" id="yjV-c0-euD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="okF-vQ-Ila"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="X7D-1V-QoJ"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="7us-Ws-bkW" id="pRd-RB-gsT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3w-xV-5jb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1300" y="-1712"/>
+        </scene>
+        <!--Coin View Controller-->
+        <scene sceneID="KRA-Mh-tkc">
+            <objects>
+                <viewController id="3xb-ha-fH1" customClass="CoinViewController" customModule="UselessStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dy0-Sn-hqR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Converter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xip-em-CjN">
+                                <rect key="frame" x="80" y="69.5" width="254" height="29.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sO-L0-vbp">
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="2f7-8e-zJA"/>
+                                    <constraint firstAttribute="height" constant="40" id="i29-cI-PuG"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="closeButtonTouched:" destination="3xb-ha-fH1" eventType="touchUpInside" id="XfD-Qw-iwq"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sCV-Bf-1Rk">
+                                <rect key="frame" x="118.5" y="139" width="177" height="67"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 0,00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqa-cE-r3L">
+                                        <rect key="frame" x="36" y="0.0" width="105.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is currently equal to:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwQ-OL-9GO">
+                                        <rect key="frame" x="0.0" y="41" width="177" height="26"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q0k-sO-Fu6">
+                                <rect key="frame" x="0.0" y="226" width="414" height="670"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CurrencyTableViewCell" rowHeight="80" id="ErX-on-607" customClass="CurrencyTableViewCell" customModule="UselessStuff" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ErX-on-607" id="Civ-yc-kif">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xUg-nU-lts" customClass="CurrencyTextField" customModule="UselessStuff" customModuleProvider="target">
+                                                    <rect key="frame" x="127" y="12.5" width="160" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="160" id="JYO-U1-dAk"/>
+                                                        <constraint firstAttribute="height" constant="55" id="ivI-qm-4Uh"/>
+                                                    </constraints>
+                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="xUg-nU-lts" firstAttribute="centerX" secondItem="Civ-yc-kif" secondAttribute="centerX" id="bSx-gR-mzN"/>
+                                                <constraint firstItem="xUg-nU-lts" firstAttribute="centerY" secondItem="Civ-yc-kif" secondAttribute="centerY" id="d3F-pr-FfU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="currencyTextField" destination="xUg-nU-lts" id="LAs-61-BH5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xip-em-CjN" firstAttribute="centerX" secondItem="dy0-Sn-hqR" secondAttribute="centerX" id="6q9-r3-8Wf"/>
+                            <constraint firstItem="xip-em-CjN" firstAttribute="leading" secondItem="paS-EL-3yQ" secondAttribute="leading" constant="80" id="B3B-H3-URa"/>
+                            <constraint firstItem="q0k-sO-Fu6" firstAttribute="leading" secondItem="paS-EL-3yQ" secondAttribute="leading" id="CY7-vw-O7n"/>
+                            <constraint firstItem="3sO-L0-vbp" firstAttribute="top" secondItem="paS-EL-3yQ" secondAttribute="top" constant="20" id="F0a-Yx-vda"/>
+                            <constraint firstItem="q0k-sO-Fu6" firstAttribute="trailing" secondItem="paS-EL-3yQ" secondAttribute="trailing" id="Ksh-Pw-RYa"/>
+                            <constraint firstItem="sCV-Bf-1Rk" firstAttribute="centerX" secondItem="dy0-Sn-hqR" secondAttribute="centerX" id="bLz-fJ-SPH"/>
+                            <constraint firstItem="sCV-Bf-1Rk" firstAttribute="top" secondItem="xip-em-CjN" secondAttribute="bottom" constant="40" id="r7w-p3-xWR"/>
+                            <constraint firstItem="3sO-L0-vbp" firstAttribute="leading" secondItem="xip-em-CjN" secondAttribute="trailing" constant="20" id="rVy-PB-Xof"/>
+                            <constraint firstItem="paS-EL-3yQ" firstAttribute="trailing" secondItem="3sO-L0-vbp" secondAttribute="trailing" constant="20" id="ssD-Gl-2lU"/>
+                            <constraint firstItem="xip-em-CjN" firstAttribute="centerY" secondItem="3sO-L0-vbp" secondAttribute="centerY" id="tON-5S-13C"/>
+                            <constraint firstItem="q0k-sO-Fu6" firstAttribute="top" secondItem="sCV-Bf-1Rk" secondAttribute="bottom" constant="20" id="uIQ-ni-2Ls"/>
+                            <constraint firstAttribute="bottom" secondItem="q0k-sO-Fu6" secondAttribute="bottom" id="wxd-md-pqk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="paS-EL-3yQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5tE-iX-6g8"/>
+                    <connections>
+                        <outlet property="tableView" destination="q0k-sO-Fu6" id="ACe-5a-FnK"/>
+                        <outlet property="titleLabel" destination="xip-em-CjN" id="sfR-wG-b6p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ytq-1O-G3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298.5507246376812" y="466.74107142857139"/>
+        </scene>
+        <!--Calculator View Controller-->
+        <scene sceneID="lCd-Jo-rNE">
+            <objects>
+                <viewController id="YGr-Hq-MqG" customClass="CalculatorViewController" customModule="UselessStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9fJ-Ql-XOH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Archimedes Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe6-Fq-rrn">
+                                <rect key="frame" x="80" y="69.5" width="254" height="29.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmh-BV-dLI">
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="GSM-cI-sbk"/>
+                                    <constraint firstAttribute="height" constant="40" id="NyX-gB-IpH"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="closeButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="WnE-gV-UNG"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFG-Vm-Zsl">
+                                <rect key="frame" x="-73.5" y="162.5" width="561" height="571"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="fb6-XM-kO4">
+                                <rect key="frame" x="20" y="193.5" width="374" height="509.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="S3y-E5-B4f">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uSS-E3-Y5C">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="80"/>
+                                                <color key="backgroundColor" red="0.79215686269999996" green="0.85882352939999995" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="6ch-mp-whZ"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="62"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FR-oJ-Dnc">
+                                                <rect key="frame" x="339" y="0.0" width="35" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="Sha-d8-k5Y"/>
+                                                    <constraint firstAttribute="height" constant="80" id="p5g-46-RpP"/>
+                                                </constraints>
+                                                <state key="normal" title="clear">
+                                                    <color key="titleColor" red="0.93725490199999995" green="0.6588235294" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="clearButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="tyr-0c-vLT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EO9-eg-WGL">
+                                        <rect key="frame" x="0.0" y="113" width="374" height="396.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UB0-TZ-sbm">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="54.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBP-Jk-Ou8" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="54.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="dBP-Jk-Ou8" secondAttribute="height" multiplier="1:0.7" id="lHM-zw-XOu"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="M8L-TS-ULd"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="7DC-gC-yaj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hym-wi-IJg" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="98.5" y="0.0" width="78.5" height="54.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="hym-wi-IJg" secondAttribute="height" multiplier="1:0.7" id="mo5-iY-YeT"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="hLz-Wr-mQF"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="0gw-Fl-b2W"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhw-kS-A8T" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="197" y="0.0" width="78.5" height="54.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="zhw-kS-A8T" secondAttribute="height" multiplier="1:0.7" id="uB9-vK-XCE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="zcq-XO-ZUV"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="mWc-H3-rtY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kX-w7-zq3" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="295.5" y="0.0" width="78.5" height="54.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="2kX-w7-zq3" secondAttribute="height" multiplier="1:0.7" id="Cdw-8G-tOw"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="÷">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="hLJ-EE-RD8"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="GjY-jJ-LNy"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lVK-tN-GWJ">
+                                                <rect key="frame" x="0.0" y="113.5" width="374" height="55"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocr-Tw-eoX" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Ocr-Tw-eoX" secondAttribute="height" multiplier="1:0.7" id="qCC-a7-eZW"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="Idx-zC-m2F"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="tvR-YX-GY3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQB-6c-XkI" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="98.5" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="KQB-6c-XkI" secondAttribute="height" multiplier="1:0.7" id="aF5-eR-j1w"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="7cM-LV-17d"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="BAh-wn-Z6l"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhO-3j-8qk" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="197" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="NhO-3j-8qk" secondAttribute="height" multiplier="1:0.7" id="vf1-aP-Pic"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="N78-Wk-QbL"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="qAk-Ki-jBf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xya-f2-fqM" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="295.5" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="xya-f2-fqM" secondAttribute="height" multiplier="1:0.7" id="Jcf-b9-r7M"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="X">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="xk2-IV-KCz"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="cUq-Fi-AXw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="m14-H1-CoE">
+                                                <rect key="frame" x="0.0" y="227.5" width="374" height="55"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4K-wT-SaN" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="W4K-wT-SaN" secondAttribute="height" multiplier="1:0.7" id="Woi-iq-uii"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="LM6-be-QsL"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="iEL-YH-bDx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yI-zC-YYQ" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="98.5" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="3yI-zC-YYQ" secondAttribute="height" multiplier="1:0.7" id="mTs-VG-ril"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="xU4-o7-3M3"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="ElV-ig-QOj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35j-6T-gbo" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="197" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="35j-6T-gbo" secondAttribute="height" multiplier="1:0.7" id="8Lx-gw-z08"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="7nC-rx-jGk"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="rGE-ld-5JX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMf-sB-53m" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="295.5" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="zMf-sB-53m" secondAttribute="height" multiplier="1:0.7" id="8fq-xe-4o3"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="–">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="4GQ-qh-IrP"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="UMm-qE-gre"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BhD-yp-nG9">
+                                                <rect key="frame" x="0.0" y="341.5" width="374" height="55"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBb-iZ-58J" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="jBb-iZ-58J" secondAttribute="height" multiplier="1:0.7" id="rHL-do-vyF"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="qgg-ZC-5Ty"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="TVu-Ry-8b6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndb-OY-8NE" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="98.5" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ndb-OY-8NE" secondAttribute="height" multiplier="1:0.7" id="whZ-9c-yEi"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title=".">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="14g-NE-1xf"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="gxS-9Q-dqu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cav-eQ-uSN" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="197" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Cav-eQ-uSN" secondAttribute="height" multiplier="1:0.7" id="MqJ-Rc-x1G"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="+">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="yBp-5O-CSW"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="GXz-bh-u4L"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAm-3v-Kt4" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                        <rect key="frame" x="295.5" y="0.0" width="78.5" height="55"/>
+                                                        <color key="backgroundColor" red="0.93725490196078431" green="0.6588235294117647" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="LAm-3v-Kt4" secondAttribute="height" multiplier="1:0.7" id="qGN-Ye-Tq1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="calculatorButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="KFQ-7m-by4"/>
+                                                            <action selector="equalButtonTouched:" destination="YGr-Hq-MqG" eventType="touchUpInside" id="h7M-ff-N7W"/>
+                                                            <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="F0f-hL-HUR"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TR7-L5-rVK" firstAttribute="trailing" secondItem="fb6-XM-kO4" secondAttribute="trailing" constant="20" id="1h9-JA-jLQ"/>
+                            <constraint firstItem="xFG-Vm-Zsl" firstAttribute="height" secondItem="fb6-XM-kO4" secondAttribute="height" multiplier="1.12" id="2Sy-nt-Azd"/>
+                            <constraint firstItem="xFG-Vm-Zsl" firstAttribute="centerX" secondItem="fb6-XM-kO4" secondAttribute="centerX" id="7YG-jO-aeK"/>
+                            <constraint firstItem="fmh-BV-dLI" firstAttribute="top" secondItem="TR7-L5-rVK" secondAttribute="top" constant="20" id="EWm-pD-90k"/>
+                            <constraint firstItem="TR7-L5-rVK" firstAttribute="trailing" secondItem="fmh-BV-dLI" secondAttribute="trailing" constant="20" id="EwT-24-ntd"/>
+                            <constraint firstItem="fb6-XM-kO4" firstAttribute="centerY" secondItem="9fJ-Ql-XOH" secondAttribute="centerY" id="HvV-JQ-cXU"/>
+                            <constraint firstItem="fmh-BV-dLI" firstAttribute="leading" secondItem="Fe6-Fq-rrn" secondAttribute="trailing" constant="20" id="NXc-xT-WGP"/>
+                            <constraint firstItem="Fe6-Fq-rrn" firstAttribute="centerY" secondItem="fmh-BV-dLI" secondAttribute="centerY" id="THD-Cw-NAY"/>
+                            <constraint firstItem="xFG-Vm-Zsl" firstAttribute="width" secondItem="fb6-XM-kO4" secondAttribute="width" multiplier="1.5" id="V3W-zp-veQ"/>
+                            <constraint firstItem="Fe6-Fq-rrn" firstAttribute="leading" secondItem="TR7-L5-rVK" secondAttribute="leading" constant="80" id="ibM-DB-zdC"/>
+                            <constraint firstItem="fb6-XM-kO4" firstAttribute="leading" secondItem="TR7-L5-rVK" secondAttribute="leading" constant="20" id="jwS-3R-BT3"/>
+                            <constraint firstItem="Fe6-Fq-rrn" firstAttribute="centerX" secondItem="9fJ-Ql-XOH" secondAttribute="centerX" id="nPT-eG-xxJ"/>
+                            <constraint firstItem="xFG-Vm-Zsl" firstAttribute="centerY" secondItem="fb6-XM-kO4" secondAttribute="centerY" id="x6F-hX-NDu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TR7-L5-rVK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="F5E-Kf-sCc"/>
+                    <connections>
+                        <outlet property="calculatorTextField" destination="uSS-E3-Y5C" id="3rm-FB-MP7"/>
+                        <outlet property="titleLabel" destination="Fe6-Fq-rrn" id="960-9D-qCz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="By8-Hf-FnQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298.5507246376812" y="1931.9196428571427"/>
+        </scene>
+        <!--Lock View Controller-->
+        <scene sceneID="Ngl-tb-gql">
+            <objects>
+                <viewController id="EzW-iq-TXe" customClass="LockViewController" customModule="UselessStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mQ7-tu-fvs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strong Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rM-0E-OHZ">
+                                <rect key="frame" x="80" y="69.5" width="254" height="29.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCJ-Jb-Veb">
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7dE-ib-K8p"/>
+                                    <constraint firstAttribute="width" constant="40" id="AG3-wt-IJp"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="closeButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="h6W-au-Whf"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0AV-FW-dMW">
+                                <rect key="frame" x="0.0" y="666" width="414" height="230"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="qaX-ZD-r10"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Xjh-Tw-yza">
+                                <rect key="frame" x="16" y="682" width="382" height="160"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="grS-d5-uJ7">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="41.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHs-Ul-KS1" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="41.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="•">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="SdC-kr-kff"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvU-sW-6Om" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                <rect key="frame" x="81" y="0.0" width="58.5" height="41.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="•">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="E80-jD-Aft"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBa-KD-T8h" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                <rect key="frame" x="161.5" y="0.0" width="59" height="41.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="•">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="fbj-Th-doh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2S-nF-FVZ" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                <rect key="frame" x="242.5" y="0.0" width="58.5" height="41.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="•">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="YqJ-7p-75A"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbm-Xn-8LG" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                <rect key="frame" x="323" y="0.0" width="59" height="41.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="•">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="ygZ-P0-VyZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="hPu-OF-zzL">
+                                        <rect key="frame" x="0.0" y="59.5" width="382" height="41"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANF-Um-2dV" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="41"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="•">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="UDA-Y3-34m"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KG5-GF-h9c" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                <rect key="frame" x="81" y="0.0" width="58.5" height="41"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="•">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="hE7-gM-d9j"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vb-fg-rnL" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                <rect key="frame" x="161.5" y="0.0" width="59" height="41"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="•">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="Nu9-6P-ogd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASA-c4-bSI" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                <rect key="frame" x="242.5" y="0.0" width="58.5" height="41"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="•">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="O9v-pN-987"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJS-jk-ooZ" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                <rect key="frame" x="323" y="0.0" width="59" height="41"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="•">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="GNL-jt-paa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Kpl-W7-A4Z">
+                                        <rect key="frame" x="0.0" y="118.5" width="382" height="41.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snR-uH-oqx" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="41.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="snR-uH-oqx" secondAttribute="height" multiplier="1:1" id="CCq-Qm-XR3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="•">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="R6w-UK-nry"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMF-YK-cRi" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                <rect key="frame" x="63.5" y="0.0" width="255" height="41.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="•">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="CRX-Eb-Rah"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuY-4C-kYZ" customClass="KeyboardButton" customModule="UselessStuff" customModuleProvider="target">
+                                                <rect key="frame" x="340.5" y="0.0" width="41.5" height="41.5"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="zuY-4C-kYZ" secondAttribute="height" multiplier="1:1" id="BDD-b1-H2r"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="•">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="gkp-bb-kmf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hPu-OF-zzL" firstAttribute="leading" secondItem="Xjh-Tw-yza" secondAttribute="leading" id="COc-Gx-iQC"/>
+                                    <constraint firstItem="Kpl-W7-A4Z" firstAttribute="leading" secondItem="Xjh-Tw-yza" secondAttribute="leading" id="DKJ-eN-wAP"/>
+                                    <constraint firstAttribute="height" constant="160" id="JfW-IE-ppa"/>
+                                    <constraint firstAttribute="trailing" secondItem="grS-d5-uJ7" secondAttribute="trailing" id="MMl-j9-VxW"/>
+                                    <constraint firstAttribute="trailing" secondItem="hPu-OF-zzL" secondAttribute="trailing" id="pb7-Y5-jaI"/>
+                                    <constraint firstItem="grS-d5-uJ7" firstAttribute="leading" secondItem="Xjh-Tw-yza" secondAttribute="leading" id="rAi-8J-WfI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kpl-W7-A4Z" secondAttribute="trailing" id="rCw-lP-Ymm"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vH4-wt-i3X">
+                                <rect key="frame" x="20" y="566" width="374" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CIv-bm-f41">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="bzv-eJ-i4E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzB-AA-l8h">
+                                        <rect key="frame" x="339" y="0.0" width="35" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="cgY-bs-820"/>
+                                            <constraint firstAttribute="height" constant="60" id="sEh-YF-slj"/>
+                                        </constraints>
+                                        <state key="normal" title="clear"/>
+                                        <connections>
+                                            <action selector="clearButtonTouched:" destination="EzW-iq-TXe" eventType="touchUpInside" id="wPA-Rj-BRK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="3pT-gi-Naq">
+                                <rect key="frame" x="20" y="184" width="374" height="302"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qCJ-Jb-Veb" firstAttribute="top" secondItem="GxH-VW-ibq" secondAttribute="top" constant="20" id="56d-Gm-xGg"/>
+                            <constraint firstItem="vH4-wt-i3X" firstAttribute="leading" secondItem="GxH-VW-ibq" secondAttribute="leading" constant="20" id="FlZ-Eb-uF6"/>
+                            <constraint firstItem="qCJ-Jb-Veb" firstAttribute="leading" secondItem="0rM-0E-OHZ" secondAttribute="trailing" constant="20" id="HMg-D4-95E"/>
+                            <constraint firstItem="vH4-wt-i3X" firstAttribute="top" secondItem="3pT-gi-Naq" secondAttribute="bottom" constant="80" id="J2E-tX-3L1"/>
+                            <constraint firstItem="GxH-VW-ibq" firstAttribute="trailing" secondItem="qCJ-Jb-Veb" secondAttribute="trailing" constant="20" id="KlO-NA-ypm"/>
+                            <constraint firstItem="GxH-VW-ibq" firstAttribute="trailing" secondItem="Xjh-Tw-yza" secondAttribute="trailing" constant="16" id="NBE-6G-4mX"/>
+                            <constraint firstItem="GxH-VW-ibq" firstAttribute="bottom" secondItem="Xjh-Tw-yza" secondAttribute="bottom" constant="20" id="NKd-0X-hVw"/>
+                            <constraint firstItem="3pT-gi-Naq" firstAttribute="leading" secondItem="GxH-VW-ibq" secondAttribute="leading" constant="20" id="OmE-oW-BSU"/>
+                            <constraint firstAttribute="bottom" secondItem="0AV-FW-dMW" secondAttribute="bottom" id="USl-oa-pK2"/>
+                            <constraint firstItem="GxH-VW-ibq" firstAttribute="trailing" secondItem="3pT-gi-Naq" secondAttribute="trailing" constant="20" id="YAX-9c-m0I"/>
+                            <constraint firstItem="0AV-FW-dMW" firstAttribute="leading" secondItem="GxH-VW-ibq" secondAttribute="leading" id="ZgX-Iz-WuQ"/>
+                            <constraint firstItem="0AV-FW-dMW" firstAttribute="trailing" secondItem="GxH-VW-ibq" secondAttribute="trailing" id="aBX-mU-jcI"/>
+                            <constraint firstItem="0AV-FW-dMW" firstAttribute="top" secondItem="vH4-wt-i3X" secondAttribute="bottom" constant="40" id="e5v-td-cOn"/>
+                            <constraint firstItem="0rM-0E-OHZ" firstAttribute="centerX" secondItem="mQ7-tu-fvs" secondAttribute="centerX" id="fwy-lb-5Kb"/>
+                            <constraint firstItem="Xjh-Tw-yza" firstAttribute="leading" secondItem="GxH-VW-ibq" secondAttribute="leading" constant="16" id="kLP-SW-cx1"/>
+                            <constraint firstItem="0rM-0E-OHZ" firstAttribute="leading" secondItem="GxH-VW-ibq" secondAttribute="leading" constant="80" id="ktB-b1-qnG"/>
+                            <constraint firstItem="3pT-gi-Naq" firstAttribute="top" secondItem="qCJ-Jb-Veb" secondAttribute="bottom" constant="80" id="lWN-UP-9ps"/>
+                            <constraint firstItem="GxH-VW-ibq" firstAttribute="trailing" secondItem="vH4-wt-i3X" secondAttribute="trailing" constant="20" id="mF1-MK-J2w"/>
+                            <constraint firstItem="0rM-0E-OHZ" firstAttribute="centerY" secondItem="qCJ-Jb-Veb" secondAttribute="centerY" id="obR-jV-qOK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GxH-VW-ibq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9sg-gN-Sw4"/>
+                    <connections>
+                        <outlet property="passTextField" destination="CIv-bm-f41" id="qZQ-jL-UrO"/>
+                        <outlet property="titleLabel" destination="0rM-0E-OHZ" id="DTZ-EM-uXq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nta-jr-aeW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298.5507246376812" y="1212.7232142857142"/>
+        </scene>
+        <!--Dice View Controller-->
+        <scene sceneID="yn6-sP-hjM">
+            <objects>
+                <viewController id="YBN-qb-NBP" customClass="DiceViewController" customModule="UselessStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8pq-fT-tfa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic Dice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEk-2c-5ep">
+                                <rect key="frame" x="80" y="69.5" width="254" height="29.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8k-6F-JYZ">
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="THe-Za-EOj"/>
+                                    <constraint firstAttribute="height" constant="40" id="nq2-Kr-EKy"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="closeButtonTouched:" destination="YBN-qb-NBP" eventType="touchUpInside" id="DoF-be-YZU"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZFC-ci-BTx">
+                                <rect key="frame" x="60" y="301" width="294" height="294"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZFC-ci-BTx" secondAttribute="height" multiplier="1:1" id="uWJ-Xk-P54"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZFC-ci-BTx" firstAttribute="centerX" secondItem="8pq-fT-tfa" secondAttribute="centerX" id="15b-OL-RAE"/>
+                            <constraint firstItem="ZFC-ci-BTx" firstAttribute="leading" secondItem="vHH-dN-URd" secondAttribute="leading" constant="60" id="3p6-Hc-3EV"/>
+                            <constraint firstItem="pEk-2c-5ep" firstAttribute="centerX" secondItem="8pq-fT-tfa" secondAttribute="centerX" id="Ci0-J4-zJc"/>
+                            <constraint firstItem="pEk-2c-5ep" firstAttribute="centerY" secondItem="e8k-6F-JYZ" secondAttribute="centerY" id="Mbj-mi-Tyd"/>
+                            <constraint firstItem="e8k-6F-JYZ" firstAttribute="leading" secondItem="pEk-2c-5ep" secondAttribute="trailing" constant="20" id="Vsb-F3-gn5"/>
+                            <constraint firstItem="vHH-dN-URd" firstAttribute="trailing" secondItem="e8k-6F-JYZ" secondAttribute="trailing" constant="20" id="dwb-Zf-YYj"/>
+                            <constraint firstItem="e8k-6F-JYZ" firstAttribute="top" secondItem="vHH-dN-URd" secondAttribute="top" constant="20" id="ekm-Ue-7xa"/>
+                            <constraint firstItem="vHH-dN-URd" firstAttribute="trailing" secondItem="ZFC-ci-BTx" secondAttribute="trailing" constant="60" id="qE8-sR-QM7"/>
+                            <constraint firstItem="pEk-2c-5ep" firstAttribute="leading" secondItem="vHH-dN-URd" secondAttribute="leading" constant="80" id="qEp-Vv-ZSA"/>
+                            <constraint firstItem="ZFC-ci-BTx" firstAttribute="centerY" secondItem="8pq-fT-tfa" secondAttribute="centerY" id="zYm-e5-Gh1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vHH-dN-URd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="B3A-aS-NFW"/>
+                    <connections>
+                        <outlet property="imageView" destination="ZFC-ci-BTx" id="cTU-A5-OCd"/>
+                        <outlet property="titleLabel" destination="pEk-2c-5ep" id="jzA-cu-MFH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N3v-lC-Q0M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298.5507246376812" y="-267.1875"/>
+        </scene>
+        <!--Ruler View Controller-->
+        <scene sceneID="I5S-3d-cJL">
+            <objects>
+                <viewController id="k3X-Aq-KDQ" customClass="RulerViewController" customModule="UselessStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jcH-75-hnW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 cm Ruler" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkS-Wh-q4E">
+                                <rect key="frame" x="80" y="69.5" width="254" height="29.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSS-WB-uHt">
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="687-MW-Mx6"/>
+                                    <constraint firstAttribute="height" constant="40" id="Fcw-Lw-r4V"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="closeButtonTouched:" destination="k3X-Aq-KDQ" eventType="touchUpInside" id="eq1-Jq-PrB"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm" translatesAutoresizingMaskIntoConstraints="NO" id="CB5-PX-lJC">
+                                <rect key="frame" x="60" y="183" width="294" height="530"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GkS-Wh-q4E" firstAttribute="leading" secondItem="VOx-0e-hV0" secondAttribute="leading" constant="80" id="8yQ-2A-wz4"/>
+                            <constraint firstItem="CB5-PX-lJC" firstAttribute="trailing" secondItem="jcH-75-hnW" secondAttribute="trailing" constant="-60" id="Apw-Qb-uDp"/>
+                            <constraint firstItem="GkS-Wh-q4E" firstAttribute="centerY" secondItem="MSS-WB-uHt" secondAttribute="centerY" id="frZ-Kz-hcE"/>
+                            <constraint firstItem="CB5-PX-lJC" firstAttribute="centerY" secondItem="jcH-75-hnW" secondAttribute="centerY" id="hAX-WX-RD1"/>
+                            <constraint firstItem="MSS-WB-uHt" firstAttribute="top" secondItem="VOx-0e-hV0" secondAttribute="top" constant="20" id="mDu-Jg-kBF"/>
+                            <constraint firstItem="VOx-0e-hV0" firstAttribute="trailing" secondItem="MSS-WB-uHt" secondAttribute="trailing" constant="20" id="mIN-am-MgD"/>
+                            <constraint firstItem="CB5-PX-lJC" firstAttribute="leading" secondItem="jcH-75-hnW" secondAttribute="leading" constant="60" id="p5J-r1-mav"/>
+                            <constraint firstItem="GkS-Wh-q4E" firstAttribute="centerX" secondItem="jcH-75-hnW" secondAttribute="centerX" id="w9h-Yv-J2K"/>
+                            <constraint firstItem="MSS-WB-uHt" firstAttribute="leading" secondItem="GkS-Wh-q4E" secondAttribute="trailing" constant="20" id="ywS-0q-ox2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VOx-0e-hV0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iJW-oI-RQz"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="GkS-Wh-q4E" id="0WM-5T-bqW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oiW-Uc-aUI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298.5507246376812" y="-1021.2053571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="800" height="800"/>
+        <image name="calculator" width="85" height="100"/>
+        <image name="close" width="57" height="57"/>
+        <image name="cm" width="461" height="530"/>
+        <image name="coin" width="103" height="103"/>
+        <image name="dice" width="82" height="83"/>
+        <image name="frame" width="186" height="258"/>
+        <image name="lock" width="76" height="107"/>
+        <image name="pallette" width="106" height="111"/>
+        <image name="ruler" width="105" height="105"/>
+        <image name="shelf" width="375" height="472"/>
+    </resources>
+</document>
