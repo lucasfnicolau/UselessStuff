@@ -36,7 +36,7 @@ class UselessStuffDelegate: NSObject, UselessStuffProtocol {
     }
 
     func getAlertController() -> UIAlertController {
-        let alert = UIAlertController(title: "Organize the shelf!", message: "Drag and drop the items wherever you like", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Organize the shelf!", message: "Drag and drop the items wherever you like. After doing that, touch on the items to use them.", preferredStyle: .alert)
         let ok = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
         alert.addAction(ok)
         return alert

@@ -14,6 +14,7 @@
 		B6A712F12448F89700493FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A712F02448F89700493FE7 /* Assets.xcassets */; };
 		B6A712F42448F89700493FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A712F22448F89700493FE7 /* LaunchScreen.storyboard */; };
 		B6A713012449079C00493FE7 /* DraggableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A713002449079C00493FE7 /* DraggableItem.swift */; };
+		B6C9236F244A290E00970B3D /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C9236E244A290E00970B3D /* CurrencyTableViewCell.swift */; };
 		B6E3903224490E28005ECAD6 /* PalletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903124490E28005ECAD6 /* PalletteViewController.swift */; };
 		B6E3903424490E51005ECAD6 /* RulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903324490E51005ECAD6 /* RulerViewController.swift */; };
 		B6E3903624490E64005ECAD6 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903524490E64005ECAD6 /* DiceViewController.swift */; };
@@ -22,6 +23,8 @@
 		B6E3903C24490E89005ECAD6 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903B24490E89005ECAD6 /* CalculatorViewController.swift */; };
 		B6E3904024491914005ECAD6 /* UselessStuffProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903F24491914005ECAD6 /* UselessStuffProtocol.swift */; };
 		B6E390422449195C005ECAD6 /* UselessStuffDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E390412449195C005ECAD6 /* UselessStuffDelegate.swift */; };
+		B6E3904524491EB1005ECAD6 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3904324491EB1005ECAD6 /* CurrencyTextField.swift */; };
+		B6E3904624491EB1005ECAD6 /* DarkRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3904424491EB1005ECAD6 /* DarkRoundedTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,7 @@
 		B6A712F32448F89700493FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6A712F52448F89700493FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6A713002449079C00493FE7 /* DraggableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableItem.swift; sourceTree = "<group>"; };
+		B6C9236E244A290E00970B3D /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		B6E3903124490E28005ECAD6 /* PalletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalletteViewController.swift; sourceTree = "<group>"; };
 		B6E3903324490E51005ECAD6 /* RulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerViewController.swift; sourceTree = "<group>"; };
 		B6E3903524490E64005ECAD6 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +46,8 @@
 		B6E3903B24490E89005ECAD6 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		B6E3903F24491914005ECAD6 /* UselessStuffProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UselessStuffProtocol.swift; sourceTree = "<group>"; };
 		B6E390412449195C005ECAD6 /* UselessStuffDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UselessStuffDelegate.swift; sourceTree = "<group>"; };
+		B6E3904324491EB1005ECAD6 /* CurrencyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		B6E3904424491EB1005ECAD6 /* DarkRoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkRoundedTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +109,10 @@
 		B6A712FC2449061400493FE7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B6E3904324491EB1005ECAD6 /* CurrencyTextField.swift */,
+				B6E3904424491EB1005ECAD6 /* DarkRoundedTextField.swift */,
 				B6A713002449079C00493FE7 /* DraggableItem.swift */,
+				B6C9236E244A290E00970B3D /* CurrencyTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,8 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E3904524491EB1005ECAD6 /* CurrencyTextField.swift in Sources */,
 				B6E3903C24490E89005ECAD6 /* CalculatorViewController.swift in Sources */,
 				B6A712EC2448F89100493FE7 /* MainScreenViewController.swift in Sources */,
+				B6E3904624491EB1005ECAD6 /* DarkRoundedTextField.swift in Sources */,
 				B6A712E82448F89100493FE7 /* AppDelegate.swift in Sources */,
 				B6A713012449079C00493FE7 /* DraggableItem.swift in Sources */,
 				B6E390422449195C005ECAD6 /* UselessStuffDelegate.swift in Sources */,
@@ -224,6 +235,7 @@
 				B6E3904024491914005ECAD6 /* UselessStuffProtocol.swift in Sources */,
 				B6E3903A24490E7D005ECAD6 /* LockViewController.swift in Sources */,
 				B6E3903224490E28005ECAD6 /* PalletteViewController.swift in Sources */,
+				B6C9236F244A290E00970B3D /* CurrencyTableViewCell.swift in Sources */,
 				B6A712EA2448F89100493FE7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
