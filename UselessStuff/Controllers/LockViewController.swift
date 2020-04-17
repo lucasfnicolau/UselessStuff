@@ -11,6 +11,10 @@ import UIKit
 class LockViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
 
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -19,5 +23,4 @@ class LockViewController: UIViewController {
     @IBAction func closeButtonTouched(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
-
 }

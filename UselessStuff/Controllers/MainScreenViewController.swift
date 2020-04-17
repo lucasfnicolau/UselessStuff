@@ -11,10 +11,15 @@ import UIKit
 class MainScreenViewController: UIViewController {
     @IBOutlet var draggableItems: [DraggableItem]!
     let uselessStuffDelegate = UselessStuffDelegate()
-    var shouldMoveItems = true
+    var shouldMoveItems = false
+
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        shouldMoveItems = true
     }
 
     override func viewDidAppear(_ animated: Bool) {

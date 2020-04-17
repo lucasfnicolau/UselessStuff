@@ -13,12 +13,16 @@ class PalletteViewController: UIViewController, PKCanvasViewDelegate {
     @IBOutlet weak var titleLabel: UILabel!
     let canvasView = PKCanvasView(frame: .zero)
 
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(canvasView)
 
         canvasView.delegate = self
-        canvasView.backgroundColor = .white
+        canvasView.backgroundColor = #colorLiteral(red: 1, green: 0.9550676942, blue: 0.8891122937, alpha: 1)
         canvasView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             canvasView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
