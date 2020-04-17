@@ -15,6 +15,7 @@
 		B6A712F42448F89700493FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A712F22448F89700493FE7 /* LaunchScreen.storyboard */; };
 		B6A713012449079C00493FE7 /* DraggableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A713002449079C00493FE7 /* DraggableItem.swift */; };
 		B6C9236F244A290E00970B3D /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C9236E244A290E00970B3D /* CurrencyTableViewCell.swift */; };
+		B6C92371244A30AC00970B3D /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C92370244A30AC00970B3D /* KeyboardButton.swift */; };
 		B6E3903224490E28005ECAD6 /* PalletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903124490E28005ECAD6 /* PalletteViewController.swift */; };
 		B6E3903424490E51005ECAD6 /* RulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903324490E51005ECAD6 /* RulerViewController.swift */; };
 		B6E3903624490E64005ECAD6 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3903524490E64005ECAD6 /* DiceViewController.swift */; };
@@ -38,6 +39,7 @@
 		B6A712F52448F89700493FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6A713002449079C00493FE7 /* DraggableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableItem.swift; sourceTree = "<group>"; };
 		B6C9236E244A290E00970B3D /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		B6C92370244A30AC00970B3D /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
 		B6E3903124490E28005ECAD6 /* PalletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalletteViewController.swift; sourceTree = "<group>"; };
 		B6E3903324490E51005ECAD6 /* RulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerViewController.swift; sourceTree = "<group>"; };
 		B6E3903524490E64005ECAD6 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				B6E3904424491EB1005ECAD6 /* DarkRoundedTextField.swift */,
 				B6A713002449079C00493FE7 /* DraggableItem.swift */,
 				B6C9236E244A290E00970B3D /* CurrencyTableViewCell.swift */,
+				B6C92370244A30AC00970B3D /* KeyboardButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				B6E3903424490E51005ECAD6 /* RulerViewController.swift in Sources */,
 				B6E3904024491914005ECAD6 /* UselessStuffProtocol.swift in Sources */,
 				B6E3903A24490E7D005ECAD6 /* LockViewController.swift in Sources */,
+				B6C92371244A30AC00970B3D /* KeyboardButton.swift in Sources */,
 				B6E3903224490E28005ECAD6 /* PalletteViewController.swift in Sources */,
 				B6C9236F244A290E00970B3D /* CurrencyTableViewCell.swift in Sources */,
 				B6A712EA2448F89100493FE7 /* SceneDelegate.swift in Sources */,
